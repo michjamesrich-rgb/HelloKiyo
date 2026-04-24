@@ -587,9 +587,32 @@ body{
   to   { transform: rotate(360deg); }
 }
 @media (max-width: 900px){
-  .heroKiyo{ min-height: auto; margin-top: 6px; }
-  .heroKiyoFrame{ width: min(260px, 60%); }
-  .heroKiyoBubble{ left: 0; top: -4%; max-width: 180px; }
+  /* Single-column hero: absolute bubble overlaps the portrait — stack instead. */
+  .heroKiyo{
+    min-height: auto;
+    margin-top: 6px;
+    flex-direction: column;
+    align-items: center;
+    gap: 14px;
+    padding: 0 6px;
+  }
+  .heroKiyoFrame{
+    width: min(280px, 78vw);
+    max-width: 300px;
+  }
+  .heroKiyoBubble{
+    position: static;
+    left: auto;
+    top: auto;
+    width: 100%;
+    max-width: min(100%, 320px);
+    margin: 0 auto;
+    align-self: center;
+    text-align: center;
+  }
+  .heroKiyoBubble::before{
+    display: none;
+  }
 }
 .heroEyebrow{
   display:inline-block;
