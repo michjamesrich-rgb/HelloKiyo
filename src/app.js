@@ -593,6 +593,13 @@ async function boot() {
   applyDemoModeFromUrl();
   maybeOpenMysteryDialog();
   updateSoundToggleLabel();
+  // Full page load always lands on the featured “All” mix (not a drilled-in category).
+  state.activeCategory = "All";
+  state.activeSubcategory = null;
+  state.catalogPage = 1;
+  renderFilters();
+  renderCatalog();
+  updateCatalogHeader();
 }
 
 function applyDemoModeFromUrl() {
