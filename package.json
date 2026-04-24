@@ -11,7 +11,8 @@
     "cf:login": "wrangler login",
     "cf:pages:create": "wrangler pages project create hellokiyo --production-branch main",
     "cf:deploy": "wrangler pages deploy . --project-name hellokiyo --branch main --commit-dirty=true",
-    "cf:dns:pages": "node scripts/cf-add-pages-dns.mjs"
+    "cf:dns:pages": "node scripts/cf-add-pages-dns.mjs",
+    "build:catalog": "node scripts/build-demo-catalog.mjs"
   },
   "keywords": [],
   "author": "",

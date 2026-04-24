@@ -2690,8 +2690,25 @@ async function loadProducts() {
     console.warn("Backend scraped catalog unavailable, using local fallback.", err);
     const res = await fetch("./data/products.json", { cache: "no-store" });
     if (!res.ok) throw new Error(`Failed to load products fallback (${res.status})`);
-    return await res.json();
+    const raw = await res.json();
+    return enrichLocalCatalogProducts(Array.isArray(raw) ? raw : []);
   }
+}
+
+/** Adds subcategory fields to static JSON rows (same path API rows already get). */
+function enrichLocalCatalogProducts(products) {
+  return products.map((p) => {
+    const classifyBlob = [p.title, p.description, (p.vibe || []).join(" ")]
+      .filter(Boolean)
+      .join(" \n ");
+    const sub = classifyProduct(p.category, classifyBlob);
+    return {
+      ...p,
+      subcategoryId: sub.id,
+      subcategoryLabel: sub.label,
+      subcategoryEmoji: sub.emoji,
+    };
+  });
 }
 
 function normalizeApiProduct(row, categoryName) {
@@ -3043,7 +3060,9 @@ function isTeenGirlAppropriate(p) {
     "udon",
     "character",
   ];
-  const categoryIsSafe = /(candy|snack|beauty|kawaii|stationery|ramen)/i.test(p.category || "");
+  const categoryIsSafe = /(candy|snack|beauty|kawaii|stationery|ramen|plush|keychain|craft)/i.test(
+    p.category || ""
+  );
   const hasColorfulCue = colorfulKeywords.some((k) => blob.includes(k));
 
   if (categoryIsSafe) return true;

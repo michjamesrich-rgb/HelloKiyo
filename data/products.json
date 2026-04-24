@@ -1,93 +1,1052 @@
 [
   {
-    "id": "snack_gummy_1",
-    "title": "JP Fruit Gummies (Assorted)",
-    "category": "Snacks",
-    "vibe": ["Sweet", "Colorful"],
-    "image": "./assets/ai-placeholders/snack_gummy_1.svg",
-    "supplierUnitCostUsd": 0.65,
-    "expectedJapanToUSShippingAllocationUsd": 0.35,
-    "handlingAllowanceUsd": 0.15
-  },
-  {
-    "id": "snack_ricecracker_1",
-    "title": "Arare Rice Crackers (Mini)",
-    "category": "Snacks",
-    "vibe": ["Savory", "Crunchy"],
-    "image": "./assets/ai-placeholders/snack_ricecracker_1.svg",
-    "supplierUnitCostUsd": 0.8,
-    "expectedJapanToUSShippingAllocationUsd": 0.4,
-    "handlingAllowanceUsd": 0.2
-  },
-  {
-    "id": "beauty_sheetmask_1",
-    "title": "Hydrating Sheet Mask",
-    "category": "Beauty",
-    "vibe": ["Skincare", "Glow"],
-    "image": "./assets/ai-placeholders/beauty_sheetmask_1.svg",
-    "supplierUnitCostUsd": 1.0,
-    "expectedJapanToUSShippingAllocationUsd": 0.55,
-    "handlingAllowanceUsd": 0.25
-  },
-  {
-    "id": "beauty_hairoil_1",
-    "title": "Silky Hair Oil (Travel)",
-    "category": "Beauty",
-    "vibe": ["Hair", "Glossy"],
-    "image": "./assets/ai-placeholders/beauty_hairoil_1.svg",
-    "supplierUnitCostUsd": 2.1,
-    "expectedJapanToUSShippingAllocationUsd": 0.8,
-    "handlingAllowanceUsd": 0.35
-  },
-  {
-    "id": "kawaii_keychain_1",
-    "title": "Kawaii Character Keychain",
-    "category": "Kawaii",
-    "vibe": ["Cute", "Collectible"],
-    "image": "./assets/ai-placeholders/kawaii_keychain_1.svg",
-    "supplierUnitCostUsd": 1.4,
-    "expectedJapanToUSShippingAllocationUsd": 0.7,
-    "handlingAllowanceUsd": 0.3
-  },
-  {
-    "id": "nails_stickers_1",
-    "title": "Nail Stickers Set",
-    "category": "Nails",
-    "vibe": ["Pink", "Sparkle"],
-    "image": "./assets/ai-placeholders/nails_stickers_1.svg",
-    "supplierUnitCostUsd": 0.95,
+    "id": "jcp_01",
+    "title": "Strawberry chocolate biscuit sticks",
+    "category": "Japanese Candy Party",
+    "description": "Crispy sticks dipped in pink strawberry chocolate — a sweet afternoon break.",
+    "vibe": [
+      "Sweet",
+      "Pink"
+    ],
+    "image": "https://images.pexels.com/photos/2000000/pexels-photo-2000000.jpeg?auto=compress&cs=tinysrgb&w=480&h=480&fit=crop",
+    "retailYen": 320,
+    "supplierUnitCostUsd": 0.85,
     "expectedJapanToUSShippingAllocationUsd": 0.45,
-    "handlingAllowanceUsd": 0.2
+    "handlingAllowanceUsd": 0.22
   },
   {
-    "id": "accessory_phonecharm_1",
-    "title": "Phone Charm (Pastel)",
-    "category": "Accessories",
-    "vibe": ["Pastel", "Trendy"],
-    "image": "./assets/ai-placeholders/accessory_phonecharm_1.svg",
-    "supplierUnitCostUsd": 1.6,
-    "expectedJapanToUSShippingAllocationUsd": 0.75,
-    "handlingAllowanceUsd": 0.35
+    "id": "jcp_02",
+    "title": "Hi-Chew mixed fruit chews",
+    "category": "Japanese Candy Party",
+    "description": "Soft fruit gummies with a long-lasting juicy chew.",
+    "vibe": [
+      "Sweet",
+      "Colorful"
+    ],
+    "image": "https://images.pexels.com/photos/3000000/pexels-photo-3000000.jpeg?auto=compress&cs=tinysrgb&w=480&h=480&fit=crop",
+    "retailYen": 280,
+    "supplierUnitCostUsd": 0.85,
+    "expectedJapanToUSShippingAllocationUsd": 0.45,
+    "handlingAllowanceUsd": 0.22
   },
   {
-    "id": "beauty_fakeNails_1",
-    "title": "Press-On Nails (Kawaii)",
-    "category": "Nails",
-    "vibe": ["Cute", "Pop"],
-    "image": "./assets/ai-placeholders/beauty_fakeNails_1.svg",
-    "supplierUnitCostUsd": 2.0,
-    "expectedJapanToUSShippingAllocationUsd": 0.9,
-    "handlingAllowanceUsd": 0.35
+    "id": "jcp_03",
+    "title": "Grape konjac jelly pouch",
+    "category": "Japanese Candy Party",
+    "description": "Jiggly grape jelly snack — fun to squeeze and sip.",
+    "vibe": [
+      "Sweet",
+      "Fun"
+    ],
+    "image": "https://images.pexels.com/photos/4000000/pexels-photo-4000000.jpeg?auto=compress&cs=tinysrgb&w=480&h=480&fit=crop",
+    "retailYen": 220,
+    "supplierUnitCostUsd": 0.85,
+    "expectedJapanToUSShippingAllocationUsd": 0.45,
+    "handlingAllowanceUsd": 0.22
   },
   {
-    "id": "kawaii_stickers_1",
-    "title": "Sticker Pack (Japan Vibes)",
-    "category": "Kawaii",
-    "vibe": ["Cute", "Stationery"],
-    "image": "./assets/ai-placeholders/kawaii_stickers_1.svg",
-    "supplierUnitCostUsd": 0.55,
-    "expectedJapanToUSShippingAllocationUsd": 0.25,
-    "handlingAllowanceUsd": 0.1
+    "id": "jcp_04",
+    "title": "Mintia icy mint tablets",
+    "category": "Japanese Candy Party",
+    "description": "Tiny powerful mints for a fresh sparkle between snacks.",
+    "vibe": [
+      "Sweet",
+      "Sparkle"
+    ],
+    "image": "https://images.pexels.com/photos/5000000/pexels-photo-5000000.jpeg?auto=compress&cs=tinysrgb&w=480&h=480&fit=crop",
+    "retailYen": 180,
+    "supplierUnitCostUsd": 0.85,
+    "expectedJapanToUSShippingAllocationUsd": 0.45,
+    "handlingAllowanceUsd": 0.22
+  },
+  {
+    "id": "jcp_05",
+    "title": "Milky caramel soft cubes",
+    "category": "Japanese Candy Party",
+    "description": "Creamy caramel squares with a nostalgic milk flavor.",
+    "vibe": [
+      "Sweet",
+      "Pink"
+    ],
+    "image": "https://images.pexels.com/photos/6000000/pexels-photo-6000000.jpeg?auto=compress&cs=tinysrgb&w=480&h=480&fit=crop",
+    "retailYen": 260,
+    "supplierUnitCostUsd": 0.85,
+    "expectedJapanToUSShippingAllocationUsd": 0.45,
+    "handlingAllowanceUsd": 0.22
+  },
+  {
+    "id": "jcp_06",
+    "title": "Melty chocolate truffle bites",
+    "category": "Japanese Candy Party",
+    "description": "Smooth ganache-style centers in a cute foil wrap.",
+    "vibe": [
+      "Sweet",
+      "Glow"
+    ],
+    "image": "https://images.pexels.com/photos/8000000/pexels-photo-8000000.jpeg?auto=compress&cs=tinysrgb&w=480&h=480&fit=crop",
+    "retailYen": 340,
+    "supplierUnitCostUsd": 0.85,
+    "expectedJapanToUSShippingAllocationUsd": 0.45,
+    "handlingAllowanceUsd": 0.22
+  },
+  {
+    "id": "jcp_07",
+    "title": "Puchao cola gummy ropes",
+    "category": "Japanese Candy Party",
+    "description": "Playful cola gummies with fizzy candy bits inside.",
+    "vibe": [
+      "Sweet",
+      "Fun"
+    ],
+    "image": "https://images.pexels.com/photos/9000000/pexels-photo-9000000.jpeg?auto=compress&cs=tinysrgb&w=480&h=480&fit=crop",
+    "retailYen": 240,
+    "supplierUnitCostUsd": 0.85,
+    "expectedJapanToUSShippingAllocationUsd": 0.45,
+    "handlingAllowanceUsd": 0.22
+  },
+  {
+    "id": "jcp_08",
+    "title": "Lemon hard candy drops",
+    "category": "Japanese Candy Party",
+    "description": "Bright citrus drops — shareable and pocket-sized.",
+    "vibe": [
+      "Sweet",
+      "Colorful"
+    ],
+    "image": "https://images.pexels.com/photos/1128678/pexels-photo-1128678.jpeg?auto=compress&cs=tinysrgb&w=480&h=480&fit=crop",
+    "retailYen": 200,
+    "supplierUnitCostUsd": 0.85,
+    "expectedJapanToUSShippingAllocationUsd": 0.45,
+    "handlingAllowanceUsd": 0.22
+  },
+  {
+    "id": "jcp_09",
+    "title": "Matcha kitkat mini pack",
+    "category": "Japanese Candy Party",
+    "description": "Earthy matcha layered wafers — a Tokyo souvenir vibe.",
+    "vibe": [
+      "Sweet",
+      "Glow"
+    ],
+    "image": "https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg?auto=compress&cs=tinysrgb&w=480&h=480&fit=crop",
+    "retailYen": 360,
+    "supplierUnitCostUsd": 0.85,
+    "expectedJapanToUSShippingAllocationUsd": 0.45,
+    "handlingAllowanceUsd": 0.22
+  },
+  {
+    "id": "jcp_10",
+    "title": "Fruit jelly cup assortment",
+    "category": "Japanese Candy Party",
+    "description": "Assorted mini cups — peach, grape, and orange sparkle.",
+    "vibe": [
+      "Sweet",
+      "Sparkle"
+    ],
+    "image": "https://images.pexels.com/photos/1646314/pexels-photo-1646314.jpeg?auto=compress&cs=tinysrgb&w=480&h=480&fit=crop",
+    "retailYen": 300,
+    "supplierUnitCostUsd": 0.85,
+    "expectedJapanToUSShippingAllocationUsd": 0.45,
+    "handlingAllowanceUsd": 0.22
+  },
+  {
+    "id": "tsb_01",
+    "title": "Lululun sheet mask set (pink)",
+    "category": "Travel-Size Beauty",
+    "description": "Daily hydration masks with a soft sakura scent.",
+    "vibe": [
+      "Glow",
+      "Pink"
+    ],
+    "image": "https://images.pexels.com/photos/205961/pexels-photo-205961.jpeg?auto=compress&cs=tinysrgb&w=480&h=480&fit=crop",
+    "retailYen": 890,
+    "supplierUnitCostUsd": 0.85,
+    "expectedJapanToUSShippingAllocationUsd": 0.45,
+    "handlingAllowanceUsd": 0.22
+  },
+  {
+    "id": "tsb_02",
+    "title": "Cherry lip balm tint tube",
+    "category": "Travel-Size Beauty",
+    "description": "Sheer cherry tint with a glossy comfortable wear.",
+    "vibe": [
+      "Pink",
+      "Glow"
+    ],
+    "image": "https://images.pexels.com/photos/3064254/pexels-photo-3064254.jpeg?auto=compress&cs=tinysrgb&w=480&h=480&fit=crop",
+    "retailYen": 420,
+    "supplierUnitCostUsd": 0.85,
+    "expectedJapanToUSShippingAllocationUsd": 0.45,
+    "handlingAllowanceUsd": 0.22
+  },
+  {
+    "id": "tsb_03",
+    "title": "Hada Labo lotion mini bottle",
+    "category": "Travel-Size Beauty",
+    "description": "Hyaluronic layering toner for dewy glass skin.",
+    "vibe": [
+      "Glow",
+      "Cute"
+    ],
+    "image": "https://images.pexels.com/photos/3789885/pexels-photo-3789885.jpeg?auto=compress&cs=tinysrgb&w=480&h=480&fit=crop",
+    "retailYen": 560,
+    "supplierUnitCostUsd": 0.85,
+    "expectedJapanToUSShippingAllocationUsd": 0.45,
+    "handlingAllowanceUsd": 0.22
+  },
+  {
+    "id": "tsb_04",
+    "title": "Clear Turn princess mask single",
+    "category": "Travel-Size Beauty",
+    "description": "Brightening sheet mask with cute packaging art.",
+    "vibe": [
+      "Glow",
+      "Sparkle"
+    ],
+    "image": "https://images.pexels.com/photos/4041392/pexels-photo-4041392.jpeg?auto=compress&cs=tinysrgb&w=480&h=480&fit=crop",
+    "retailYen": 320,
+    "supplierUnitCostUsd": 0.85,
+    "expectedJapanToUSShippingAllocationUsd": 0.45,
+    "handlingAllowanceUsd": 0.22
+  },
+  {
+    "id": "tsb_05",
+    "title": "Serum essence vial travel",
+    "category": "Travel-Size Beauty",
+    "description": "Concentrated essence for overnight glow recovery.",
+    "vibe": [
+      "Glow",
+      "Colorful"
+    ],
+    "image": "https://images.pexels.com/photos/4052388/pexels-photo-4052388.jpeg?auto=compress&cs=tinysrgb&w=480&h=480&fit=crop",
+    "retailYen": 780,
+    "supplierUnitCostUsd": 0.85,
+    "expectedJapanToUSShippingAllocationUsd": 0.45,
+    "handlingAllowanceUsd": 0.22
+  },
+  {
+    "id": "tsb_06",
+    "title": "Mediheal tea tree mask duo",
+    "category": "Travel-Size Beauty",
+    "description": "Cooling sheet masks to calm busy skin days.",
+    "vibe": [
+      "Glow",
+      "Cute"
+    ],
+    "image": "https://images.pexels.com/photos/4110250/pexels-photo-4110250.jpeg?auto=compress&cs=tinysrgb&w=480&h=480&fit=crop",
+    "retailYen": 440,
+    "supplierUnitCostUsd": 0.85,
+    "expectedJapanToUSShippingAllocationUsd": 0.45,
+    "handlingAllowanceUsd": 0.22
+  },
+  {
+    "id": "tsb_07",
+    "title": "Nail cuticle oil pen rose",
+    "category": "Travel-Size Beauty",
+    "description": "Twist-up oil for glossy healthy-looking nails.",
+    "vibe": [
+      "Pink",
+      "Sparkle"
+    ],
+    "image": "https://images.pexels.com/photos/5632391/pexels-photo-5632391.jpeg?auto=compress&cs=tinysrgb&w=480&h=480&fit=crop",
+    "retailYen": 380,
+    "supplierUnitCostUsd": 0.85,
+    "expectedJapanToUSShippingAllocationUsd": 0.45,
+    "handlingAllowanceUsd": 0.22
+  },
+  {
+    "id": "tsb_08",
+    "title": "Silky hair oil travel size",
+    "category": "Travel-Size Beauty",
+    "description": "Weightless oil for shiny ends on the go.",
+    "vibe": [
+      "Glow",
+      "Colorful"
+    ],
+    "image": "https://images.pexels.com/photos/5632401/pexels-photo-5632401.jpeg?auto=compress&cs=tinysrgb&w=480&h=480&fit=crop",
+    "retailYen": 520,
+    "supplierUnitCostUsd": 0.85,
+    "expectedJapanToUSShippingAllocationUsd": 0.45,
+    "handlingAllowanceUsd": 0.22
+  },
+  {
+    "id": "tsb_09",
+    "title": "BB cream cushion sample kit",
+    "category": "Travel-Size Beauty",
+    "description": "Natural coverage cushion compacts for touch-ups.",
+    "vibe": [
+      "Glow",
+      "Pink"
+    ],
+    "image": "https://images.pexels.com/photos/7261425/pexels-photo-7261425.jpeg?auto=compress&cs=tinysrgb&w=480&h=480&fit=crop",
+    "retailYen": 960,
+    "supplierUnitCostUsd": 0.85,
+    "expectedJapanToUSShippingAllocationUsd": 0.45,
+    "handlingAllowanceUsd": 0.22
+  },
+  {
+    "id": "tsb_10",
+    "title": "Moisturizing cream mini jar",
+    "category": "Travel-Size Beauty",
+    "description": "Rich cream for cheeks and dry spots — kawaii jar.",
+    "vibe": [
+      "Glow",
+      "Cute"
+    ],
+    "image": "https://images.pexels.com/photos/175659/pexels-photo-175659.jpeg?auto=compress&cs=tinysrgb&w=480&h=480&fit=crop",
+    "retailYen": 640,
+    "supplierUnitCostUsd": 0.85,
+    "expectedJapanToUSShippingAllocationUsd": 0.45,
+    "handlingAllowanceUsd": 0.22
+  },
+  {
+    "id": "crf_01",
+    "title": "Cup noodle classic soy cup",
+    "category": "Cup Ramen Flavors",
+    "description": "Iconic soy broth noodles — quick cozy lunch.",
+    "vibe": [
+      "Savory",
+      "Fun"
+    ],
+    "image": "https://images.pexels.com/photos/1503602/pexels-photo-1503602.jpeg?auto=compress&cs=tinysrgb&w=480&h=480&fit=crop",
+    "retailYen": 220,
+    "supplierUnitCostUsd": 0.85,
+    "expectedJapanToUSShippingAllocationUsd": 0.45,
+    "handlingAllowanceUsd": 0.22
+  },
+  {
+    "id": "crf_02",
+    "title": "Spicy miso fire cup ramen",
+    "category": "Cup Ramen Flavors",
+    "description": "Bold miso heat with sesame aroma.",
+    "vibe": [
+      "Savory",
+      "Sparkle"
+    ],
+    "image": "https://images.pexels.com/photos/1556228/pexels-photo-1556228.jpeg?auto=compress&cs=tinysrgb&w=480&h=480&fit=crop",
+    "retailYen": 240,
+    "supplierUnitCostUsd": 0.85,
+    "expectedJapanToUSShippingAllocationUsd": 0.45,
+    "handlingAllowanceUsd": 0.22
+  },
+  {
+    "id": "crf_03",
+    "title": "Tonkotsu pork broth cup",
+    "category": "Cup Ramen Flavors",
+    "description": "Creamy white broth inspired by Hakata stalls.",
+    "vibe": [
+      "Savory",
+      "Colorful"
+    ],
+    "image": "https://images.pexels.com/photos/1576045/pexels-photo-1576045.jpeg?auto=compress&cs=tinysrgb&w=480&h=480&fit=crop",
+    "retailYen": 260,
+    "supplierUnitCostUsd": 0.85,
+    "expectedJapanToUSShippingAllocationUsd": 0.45,
+    "handlingAllowanceUsd": 0.22
+  },
+  {
+    "id": "crf_04",
+    "title": "Seafood tom yum cup noodles",
+    "category": "Cup Ramen Flavors",
+    "description": "Lemongrass and shrimp notes — bright and zesty.",
+    "vibe": [
+      "Savory",
+      "Fun"
+    ],
+    "image": "https://images.pexels.com/photos/1619569/pexels-photo-1619569.jpeg?auto=compress&cs=tinysrgb&w=480&h=480&fit=crop",
+    "retailYen": 250,
+    "supplierUnitCostUsd": 0.85,
+    "expectedJapanToUSShippingAllocationUsd": 0.45,
+    "handlingAllowanceUsd": 0.22
+  },
+  {
+    "id": "crf_05",
+    "title": "Curry cup ramen thick sauce",
+    "category": "Cup Ramen Flavors",
+    "description": "Sweet Japanese curry roux clinging to noodles.",
+    "vibe": [
+      "Savory",
+      "Cute"
+    ],
+    "image": "https://images.pexels.com/photos/1639562/pexels-photo-1639562.jpeg?auto=compress&cs=tinysrgb&w=480&h=480&fit=crop",
+    "retailYen": 230,
+    "supplierUnitCostUsd": 0.85,
+    "expectedJapanToUSShippingAllocationUsd": 0.45,
+    "handlingAllowanceUsd": 0.22
+  },
+  {
+    "id": "crf_06",
+    "title": "Yakisoba UFO tray noodles",
+    "category": "Cup Ramen Flavors",
+    "description": "Pan-style noodles with tangy sauce packet.",
+    "vibe": [
+      "Savory",
+      "Colorful"
+    ],
+    "image": "https://images.pexels.com/photos/1656688/pexels-photo-1656688.jpeg?auto=compress&cs=tinysrgb&w=480&h=480&fit=crop",
+    "retailYen": 280,
+    "supplierUnitCostUsd": 0.85,
+    "expectedJapanToUSShippingAllocationUsd": 0.45,
+    "handlingAllowanceUsd": 0.22
+  },
+  {
+    "id": "crf_07",
+    "title": "Soba kitsune cup with fried tofu",
+    "category": "Cup Ramen Flavors",
+    "description": "Light dashi soba with sweet aburaage.",
+    "vibe": [
+      "Savory",
+      "Pink"
+    ],
+    "image": "https://images.pexels.com/photos/1697912/pexels-photo-1697912.jpeg?auto=compress&cs=tinysrgb&w=480&h=480&fit=crop",
+    "retailYen": 210,
+    "supplierUnitCostUsd": 0.85,
+    "expectedJapanToUSShippingAllocationUsd": 0.45,
+    "handlingAllowanceUsd": 0.22
+  },
+  {
+    "id": "crf_08",
+    "title": "Udon tempura bowl instant",
+    "category": "Cup Ramen Flavors",
+    "description": "Thick udon with crispy tempura chip topping.",
+    "vibe": [
+      "Savory",
+      "Fun"
+    ],
+    "image": "https://images.pexels.com/photos/1702373/pexels-photo-1702373.jpeg?auto=compress&cs=tinysrgb&w=480&h=480&fit=crop",
+    "retailYen": 270,
+    "supplierUnitCostUsd": 0.85,
+    "expectedJapanToUSShippingAllocationUsd": 0.45,
+    "handlingAllowanceUsd": 0.22
+  },
+  {
+    "id": "crf_09",
+    "title": "Hot chili oil cup ramen",
+    "category": "Cup Ramen Flavors",
+    "description": "Chili-forward broth for spice lovers.",
+    "vibe": [
+      "Savory",
+      "Sparkle"
+    ],
+    "image": "https://images.pexels.com/photos/1839919/pexels-photo-1839919.jpeg?auto=compress&cs=tinysrgb&w=480&h=480&fit=crop",
+    "retailYen": 235,
+    "supplierUnitCostUsd": 0.85,
+    "expectedJapanToUSShippingAllocationUsd": 0.45,
+    "handlingAllowanceUsd": 0.22
+  },
+  {
+    "id": "crf_10",
+    "title": "Shio seafood cup classic",
+    "category": "Cup Ramen Flavors",
+    "description": "Clear salt broth with gentle seafood notes.",
+    "vibe": [
+      "Savory",
+      "Glow"
+    ],
+    "image": "https://images.pexels.com/photos/1854189/pexels-photo-1854189.jpeg?auto=compress&cs=tinysrgb&w=480&h=480&fit=crop",
+    "retailYen": 225,
+    "supplierUnitCostUsd": 0.85,
+    "expectedJapanToUSShippingAllocationUsd": 0.45,
+    "handlingAllowanceUsd": 0.22
+  },
+  {
+    "id": "ks_01",
+    "title": "Pilot Juice gel pen 0.5 pastel",
+    "category": "Kawaii Stationery",
+    "description": "Smooth gel ink in soft lavender and mint barrels.",
+    "vibe": [
+      "Cute",
+      "Pastel"
+    ],
+    "image": "https://images.pexels.com/photos/1876279/pexels-photo-1876279.jpeg?auto=compress&cs=tinysrgb&w=480&h=480&fit=crop",
+    "retailYen": 180,
+    "supplierUnitCostUsd": 0.85,
+    "expectedJapanToUSShippingAllocationUsd": 0.45,
+    "handlingAllowanceUsd": 0.22
+  },
+  {
+    "id": "ks_02",
+    "title": "Tombow mono eraser block",
+    "category": "Kawaii Stationery",
+    "description": "Crisp erasing for sketches and study notes.",
+    "vibe": [
+      "Cute",
+      "Colorful"
+    ],
+    "image": "https://images.pexels.com/photos/1893102/pexels-photo-1893102.jpeg?auto=compress&cs=tinysrgb&w=480&h=480&fit=crop",
+    "retailYen": 120,
+    "supplierUnitCostUsd": 0.85,
+    "expectedJapanToUSShippingAllocationUsd": 0.45,
+    "handlingAllowanceUsd": 0.22
+  },
+  {
+    "id": "ks_03",
+    "title": "Zebra mildliner highlighter set",
+    "category": "Kawaii Stationery",
+    "description": "Dual-tip pastel markers for planner spreads.",
+    "vibe": [
+      "Cute",
+      "Sparkle"
+    ],
+    "image": "https://images.pexels.com/photos/1912055/pexels-photo-1912055.jpeg?auto=compress&cs=tinysrgb&w=480&h=480&fit=crop",
+    "retailYen": 260,
+    "supplierUnitCostUsd": 0.85,
+    "expectedJapanToUSShippingAllocationUsd": 0.45,
+    "handlingAllowanceUsd": 0.22
+  },
+  {
+    "id": "ks_04",
+    "title": "Sakura grid notebook A6",
+    "category": "Kawaii Stationery",
+    "description": "Compact dot grid for journaling on the train.",
+    "vibe": [
+      "Cute",
+      "Pink"
+    ],
+    "image": "https://images.pexels.com/photos/1933900/pexels-photo-1933900.jpeg?auto=compress&cs=tinysrgb&w=480&h=480&fit=crop",
+    "retailYen": 220,
+    "supplierUnitCostUsd": 0.85,
+    "expectedJapanToUSShippingAllocationUsd": 0.45,
+    "handlingAllowanceUsd": 0.22
+  },
+  {
+    "id": "ks_05",
+    "title": "Kawaii flake stickers dessert",
+    "category": "Kawaii Stationery",
+    "description": "Puffy dessert stickers for deco planners.",
+    "vibe": [
+      "Cute",
+      "Sweet"
+    ],
+    "image": "https://images.pexels.com/photos/1995842/pexels-photo-1995842.jpeg?auto=compress&cs=tinysrgb&w=480&h=480&fit=crop",
+    "retailYen": 160,
+    "supplierUnitCostUsd": 0.85,
+    "expectedJapanToUSShippingAllocationUsd": 0.45,
+    "handlingAllowanceUsd": 0.22
+  },
+  {
+    "id": "ks_06",
+    "title": "Sakura washi tape slim trio",
+    "category": "Kawaii Stationery",
+    "description": "Floral masking tapes for borders and tabs.",
+    "vibe": [
+      "Cute",
+      "Floral"
+    ],
+    "image": "https://images.pexels.com/photos/2033997/pexels-photo-2033997.jpeg?auto=compress&cs=tinysrgb&w=480&h=480&fit=crop",
+    "retailYen": 190,
+    "supplierUnitCostUsd": 0.85,
+    "expectedJapanToUSShippingAllocationUsd": 0.45,
+    "handlingAllowanceUsd": 0.22
+  },
+  {
+    "id": "ks_07",
+    "title": "Uni-ball signo white gel pen",
+    "category": "Kawaii Stationery",
+    "description": "Opaque white ink for black paper doodles.",
+    "vibe": [
+      "Cute",
+      "Sparkle"
+    ],
+    "image": "https://images.pexels.com/photos/2059191/pexels-photo-2059191.jpeg?auto=compress&cs=tinysrgb&w=480&h=480&fit=crop",
+    "retailYen": 150,
+    "supplierUnitCostUsd": 0.85,
+    "expectedJapanToUSShippingAllocationUsd": 0.45,
+    "handlingAllowanceUsd": 0.22
+  },
+  {
+    "id": "ks_08",
+    "title": "Pentel mechanical pencil 0.5",
+    "category": "Kawaii Stationery",
+    "description": "Shake-advance pencil with comfy pastel grip.",
+    "vibe": [
+      "Cute",
+      "Pastel"
+    ],
+    "image": "https://images.pexels.com/photos/2074129/pexels-photo-2074129.jpeg?auto=compress&cs=tinysrgb&w=480&h=480&fit=crop",
+    "retailYen": 200,
+    "supplierUnitCostUsd": 0.85,
+    "expectedJapanToUSShippingAllocationUsd": 0.45,
+    "handlingAllowanceUsd": 0.22
+  },
+  {
+    "id": "ks_09",
+    "title": "Highlighter twin pastel pack",
+    "category": "Kawaii Stationery",
+    "description": "Soft colors that will not bleed through thin paper.",
+    "vibe": [
+      "Cute",
+      "Colorful"
+    ],
+    "image": "https://images.pexels.com/photos/2089718/pexels-photo-2089718.jpeg?auto=compress&cs=tinysrgb&w=480&h=480&fit=crop",
+    "retailYen": 210,
+    "supplierUnitCostUsd": 0.85,
+    "expectedJapanToUSShippingAllocationUsd": 0.45,
+    "handlingAllowanceUsd": 0.22
+  },
+  {
+    "id": "ks_10",
+    "title": "Travel journal kawaii cover",
+    "category": "Kawaii Stationery",
+    "description": "Embossed cover with ribbon bookmark — diary ready.",
+    "vibe": [
+      "Cute",
+      "Pink"
+    ],
+    "image": "https://images.pexels.com/photos/2119761/pexels-photo-2119761.jpeg?auto=compress&cs=tinysrgb&w=480&h=480&fit=crop",
+    "retailYen": 340,
+    "supplierUnitCostUsd": 0.85,
+    "expectedJapanToUSShippingAllocationUsd": 0.45,
+    "handlingAllowanceUsd": 0.22
+  },
+  {
+    "id": "sm_01",
+    "title": "Calbee potato chips consommé",
+    "category": "Snack Market",
+    "description": "Crispy ridged chips with rich umami seasoning.",
+    "vibe": [
+      "Fun",
+      "Savory"
+    ],
+    "image": "https://images.pexels.com/photos/2130134/pexels-photo-2130134.jpeg?auto=compress&cs=tinysrgb&w=480&h=480&fit=crop",
+    "retailYen": 220,
+    "supplierUnitCostUsd": 0.85,
+    "expectedJapanToUSShippingAllocationUsd": 0.45,
+    "handlingAllowanceUsd": 0.22
+  },
+  {
+    "id": "sm_02",
+    "title": "Pocky matcha green biscuit",
+    "category": "Snack Market",
+    "description": "Matcha-coated sticks — shareable green tea treat.",
+    "vibe": [
+      "Sweet",
+      "Glow"
+    ],
+    "image": "https://images.pexels.com/photos/2178723/pexels-photo-2178723.jpeg?auto=compress&cs=tinysrgb&w=480&h=480&fit=crop",
+    "retailYen": 240,
+    "supplierUnitCostUsd": 0.85,
+    "expectedJapanToUSShippingAllocationUsd": 0.45,
+    "handlingAllowanceUsd": 0.22
+  },
+  {
+    "id": "sm_03",
+    "title": "Jagabee butter potato sticks",
+    "category": "Snack Market",
+    "description": "Crunchy fry-cut sticks in a pocket pouch.",
+    "vibe": [
+      "Fun",
+      "Colorful"
+    ],
+    "image": "https://images.pexels.com/photos/2209114/pexels-photo-2209114.jpeg?auto=compress&cs=tinysrgb&w=480&h=480&fit=crop",
+    "retailYen": 260,
+    "supplierUnitCostUsd": 0.85,
+    "expectedJapanToUSShippingAllocationUsd": 0.45,
+    "handlingAllowanceUsd": 0.22
+  },
+  {
+    "id": "sm_04",
+    "title": "Hello Panda chocolate biscuit",
+    "category": "Snack Market",
+    "description": "Bite-size biscuits with creamy cocoa filling.",
+    "vibe": [
+      "Sweet",
+      "Cute"
+    ],
+    "image": "https://images.pexels.com/photos/2238303/pexels-photo-2238303.jpeg?auto=compress&cs=tinysrgb&w=480&h=480&fit=crop",
+    "retailYen": 200,
+    "supplierUnitCostUsd": 0.85,
+    "expectedJapanToUSShippingAllocationUsd": 0.45,
+    "handlingAllowanceUsd": 0.22
+  },
+  {
+    "id": "sm_05",
+    "title": "Oreo thin cookies vanilla",
+    "category": "Snack Market",
+    "description": "Light crispy sandwich cookies for snack breaks.",
+    "vibe": [
+      "Sweet",
+      "Fun"
+    ],
+    "image": "https://images.pexels.com/photos/2255937/pexels-photo-2255937.jpeg?auto=compress&cs=tinysrgb&w=480&h=480&fit=crop",
+    "retailYen": 230,
+    "supplierUnitCostUsd": 0.85,
+    "expectedJapanToUSShippingAllocationUsd": 0.45,
+    "handlingAllowanceUsd": 0.22
+  },
+  {
+    "id": "sm_06",
+    "title": "Senbei rice cracker mix bag",
+    "category": "Snack Market",
+    "description": "Soy-glazed and seaweed arare assortment.",
+    "vibe": [
+      "Savory",
+      "Fun"
+    ],
+    "image": "https://images.pexels.com/photos/2261758/pexels-photo-2261758.jpeg?auto=compress&cs=tinysrgb&w=480&h=480&fit=crop",
+    "retailYen": 280,
+    "supplierUnitCostUsd": 0.85,
+    "expectedJapanToUSShippingAllocationUsd": 0.45,
+    "handlingAllowanceUsd": 0.22
+  },
+  {
+    "id": "sm_07",
+    "title": "Itoen oi ocha green tea bottle",
+    "category": "Snack Market",
+    "description": "Unsweetened green tea — fridge friendly.",
+    "vibe": [
+      "Glow",
+      "Colorful"
+    ],
+    "image": "https://images.pexels.com/photos/2280536/pexels-photo-2280536.jpeg?auto=compress&cs=tinysrgb&w=480&h=480&fit=crop",
+    "retailYen": 180,
+    "supplierUnitCostUsd": 0.85,
+    "expectedJapanToUSShippingAllocationUsd": 0.45,
+    "handlingAllowanceUsd": 0.22
+  },
+  {
+    "id": "sm_08",
+    "title": "KitKat strawberry share pack",
+    "category": "Snack Market",
+    "description": "Mini bars with fruity pink coating.",
+    "vibe": [
+      "Sweet",
+      "Pink"
+    ],
+    "image": "https://images.pexels.com/photos/2291361/pexels-photo-2291361.jpeg?auto=compress&cs=tinysrgb&w=480&h=480&fit=crop",
+    "retailYen": 320,
+    "supplierUnitCostUsd": 0.85,
+    "expectedJapanToUSShippingAllocationUsd": 0.45,
+    "handlingAllowanceUsd": 0.22
+  },
+  {
+    "id": "sm_09",
+    "title": "Collon cream roll biscuits",
+    "category": "Snack Market",
+    "description": "Tiny waffle rolls filled with vanilla cream.",
+    "vibe": [
+      "Sweet",
+      "Cute"
+    ],
+    "image": "https://images.pexels.com/photos/2304777/pexels-photo-2304777.jpeg?auto=compress&cs=tinysrgb&w=480&h=480&fit=crop",
+    "retailYen": 210,
+    "supplierUnitCostUsd": 0.85,
+    "expectedJapanToUSShippingAllocationUsd": 0.45,
+    "handlingAllowanceUsd": 0.22
+  },
+  {
+    "id": "sm_10",
+    "title": "Potato chip seaweed salt",
+    "category": "Snack Market",
+    "description": "Nori-kissed chips with a beach picnic vibe.",
+    "vibe": [
+      "Savory",
+      "Sparkle"
+    ],
+    "image": "https://images.pexels.com/photos/2329446/pexels-photo-2329446.jpeg?auto=compress&cs=tinysrgb&w=480&h=480&fit=crop",
+    "retailYen": 225,
+    "supplierUnitCostUsd": 0.85,
+    "expectedJapanToUSShippingAllocationUsd": 0.45,
+    "handlingAllowanceUsd": 0.22
+  },
+  {
+    "id": "pk_01",
+    "title": "My Melody plush bag clip",
+    "category": "Plush & Keychains",
+    "description": "Soft pink hood mascot — clips to totes and zippers.",
+    "vibe": [
+      "Cute",
+      "Pink"
+    ],
+    "image": "https://images.pexels.com/photos/2341298/pexels-photo-2341298.jpeg?auto=compress&cs=tinysrgb&w=480&h=480&fit=crop",
+    "retailYen": 920,
+    "supplierUnitCostUsd": 0.85,
+    "expectedJapanToUSShippingAllocationUsd": 0.45,
+    "handlingAllowanceUsd": 0.22
+  },
+  {
+    "id": "pk_02",
+    "title": "Cinnamoroll cloud mascot mini",
+    "category": "Plush & Keychains",
+    "description": "Sky puppy plush with embroidered blush cheeks.",
+    "vibe": [
+      "Cute",
+      "Pastel"
+    ],
+    "image": "https://images.pexels.com/photos/2364879/pexels-photo-2364879.jpeg?auto=compress&cs=tinysrgb&w=480&h=480&fit=crop",
+    "retailYen": 980,
+    "supplierUnitCostUsd": 0.85,
+    "expectedJapanToUSShippingAllocationUsd": 0.45,
+    "handlingAllowanceUsd": 0.22
+  },
+  {
+    "id": "pk_03",
+    "title": "Pikachu tail keychain rubber",
+    "category": "Plush & Keychains",
+    "description": "Bright yellow lightning buddy for keys.",
+    "vibe": [
+      "Cute",
+      "Sparkle"
+    ],
+    "image": "https://images.pexels.com/photos/2387793/pexels-photo-2387793.jpeg?auto=compress&cs=tinysrgb&w=480&h=480&fit=crop",
+    "retailYen": 640,
+    "supplierUnitCostUsd": 0.85,
+    "expectedJapanToUSShippingAllocationUsd": 0.45,
+    "handlingAllowanceUsd": 0.22
+  },
+  {
+    "id": "pk_04",
+    "title": "Chiikawa crying face charm",
+    "category": "Plush & Keychains",
+    "description": "Tiny emotional support bean on a ball chain.",
+    "vibe": [
+      "Cute",
+      "Colorful"
+    ],
+    "image": "https://images.pexels.com/photos/2398984/pexels-photo-2398984.jpeg?auto=compress&cs=tinysrgb&w=480&h=480&fit=crop",
+    "retailYen": 720,
+    "supplierUnitCostUsd": 0.85,
+    "expectedJapanToUSShippingAllocationUsd": 0.45,
+    "handlingAllowanceUsd": 0.22
+  },
+  {
+    "id": "pk_05",
+    "title": "Rilakkuma lazy bear palm plush",
+    "category": "Plush & Keychains",
+    "description": "Pocket-sized bear for desk naps.",
+    "vibe": [
+      "Cute",
+      "Sweet"
+    ],
+    "image": "https://images.pexels.com/photos/2410524/pexels-photo-2410524.jpeg?auto=compress&cs=tinysrgb&w=480&h=480&fit=crop",
+    "retailYen": 1100,
+    "supplierUnitCostUsd": 0.85,
+    "expectedJapanToUSShippingAllocationUsd": 0.45,
+    "handlingAllowanceUsd": 0.22
+  },
+  {
+    "id": "pk_06",
+    "title": "Kuromi bow keyring pastel",
+    "category": "Plush & Keychains",
+    "description": "Mischievous rabbit with glitter heart charm.",
+    "vibe": [
+      "Cute",
+      "Sparkle"
+    ],
+    "image": "https://images.pexels.com/photos/2421933/pexels-photo-2421933.jpeg?auto=compress&cs=tinysrgb&w=480&h=480&fit=crop",
+    "retailYen": 760,
+    "supplierUnitCostUsd": 0.85,
+    "expectedJapanToUSShippingAllocationUsd": 0.45,
+    "handlingAllowanceUsd": 0.22
+  },
+  {
+    "id": "pk_07",
+    "title": "Pompompurin pudding pup plush",
+    "category": "Plush & Keychains",
+    "description": "Yellow beret dog — squishy and round.",
+    "vibe": [
+      "Cute",
+      "Sweet"
+    ],
+    "image": "https://images.pexels.com/photos/2433214/pexels-photo-2433214.jpeg?auto=compress&cs=tinysrgb&w=480&h=480&fit=crop",
+    "retailYen": 890,
+    "supplierUnitCostUsd": 0.85,
+    "expectedJapanToUSShippingAllocationUsd": 0.45,
+    "handlingAllowanceUsd": 0.22
+  },
+  {
+    "id": "pk_08",
+    "title": "Totoro leaf umbrella plush",
+    "category": "Plush & Keychains",
+    "description": "Forest spirit plush with stitched leaf detail.",
+    "vibe": [
+      "Cute",
+      "Glow"
+    ],
+    "image": "https://images.pexels.com/photos/2444256/pexels-photo-2444256.jpeg?auto=compress&cs=tinysrgb&w=480&h=480&fit=crop",
+    "retailYen": 1250,
+    "supplierUnitCostUsd": 0.85,
+    "expectedJapanToUSShippingAllocationUsd": 0.45,
+    "handlingAllowanceUsd": 0.22
+  },
+  {
+    "id": "pk_09",
+    "title": "Eevee fluffy evolution keychain",
+    "category": "Plush & Keychains",
+    "description": "Soft brown fox with felt collar accent.",
+    "vibe": [
+      "Cute",
+      "Colorful"
+    ],
+    "image": "https://images.pexels.com/photos/2466488/pexels-photo-2466488.jpeg?auto=compress&cs=tinysrgb&w=480&h=480&fit=crop",
+    "retailYen": 680,
+    "supplierUnitCostUsd": 0.85,
+    "expectedJapanToUSShippingAllocationUsd": 0.45,
+    "handlingAllowanceUsd": 0.22
+  },
+  {
+    "id": "pk_10",
+    "title": "Jigglypuff round palm plush",
+    "category": "Plush & Keychains",
+    "description": "Pink balloon singer — fits in one hand.",
+    "vibe": [
+      "Cute",
+      "Pink"
+    ],
+    "image": "https://images.pexels.com/photos/2000000/pexels-photo-2000000.jpeg?auto=compress&cs=tinysrgb&w=480&h=480&fit=crop",
+    "retailYen": 740,
+    "supplierUnitCostUsd": 0.85,
+    "expectedJapanToUSShippingAllocationUsd": 0.45,
+    "handlingAllowanceUsd": 0.22
+  },
+  {
+    "id": "cd_01",
+    "title": "MT washi tape slim sakura",
+    "category": "Crafts & DIY",
+    "description": "Petals and grid lines for journaling borders.",
+    "vibe": [
+      "Cute",
+      "Floral"
+    ],
+    "image": "https://images.pexels.com/photos/3000000/pexels-photo-3000000.jpeg?auto=compress&cs=tinysrgb&w=480&h=480&fit=crop",
+    "retailYen": 420,
+    "supplierUnitCostUsd": 0.85,
+    "expectedJapanToUSShippingAllocationUsd": 0.45,
+    "handlingAllowanceUsd": 0.22
+  },
+  {
+    "id": "cd_02",
+    "title": "Flake stickers pastel dessert",
+    "category": "Crafts & DIY",
+    "description": "Clear-backed dessert icons for planners.",
+    "vibe": [
+      "Cute",
+      "Sweet"
+    ],
+    "image": "https://images.pexels.com/photos/4000000/pexels-photo-4000000.jpeg?auto=compress&cs=tinysrgb&w=480&h=480&fit=crop",
+    "retailYen": 360,
+    "supplierUnitCostUsd": 0.85,
+    "expectedJapanToUSShippingAllocationUsd": 0.45,
+    "handlingAllowanceUsd": 0.22
+  },
+  {
+    "id": "cd_03",
+    "title": "Origami chiyogami 15cm pack",
+    "category": "Crafts & DIY",
+    "description": "Patterned squares for cranes and gift toppers.",
+    "vibe": [
+      "Cute",
+      "Colorful"
+    ],
+    "image": "https://images.pexels.com/photos/5000000/pexels-photo-5000000.jpeg?auto=compress&cs=tinysrgb&w=480&h=480&fit=crop",
+    "retailYen": 280,
+    "supplierUnitCostUsd": 0.85,
+    "expectedJapanToUSShippingAllocationUsd": 0.45,
+    "handlingAllowanceUsd": 0.22
+  },
+  {
+    "id": "cd_04",
+    "title": "UV resin mini starter kit",
+    "category": "Crafts & DIY",
+    "description": "Tiny bottles and mixing sticks for charm casting.",
+    "vibe": [
+      "Sparkle",
+      "Glow"
+    ],
+    "image": "https://images.pexels.com/photos/6000000/pexels-photo-6000000.jpeg?auto=compress&cs=tinysrgb&w=480&h=480&fit=crop",
+    "retailYen": 1200,
+    "supplierUnitCostUsd": 0.85,
+    "expectedJapanToUSShippingAllocationUsd": 0.45,
+    "handlingAllowanceUsd": 0.22
+  },
+  {
+    "id": "cd_05",
+    "title": "Fude brush pen lettering set",
+    "category": "Crafts & DIY",
+    "description": "Soft tip for thick-thin strokes and headers.",
+    "vibe": [
+      "Cute",
+      "Glow"
+    ],
+    "image": "https://images.pexels.com/photos/8000000/pexels-photo-8000000.jpeg?auto=compress&cs=tinysrgb&w=480&h=480&fit=crop",
+    "retailYen": 540,
+    "supplierUnitCostUsd": 0.85,
+    "expectedJapanToUSShippingAllocationUsd": 0.45,
+    "handlingAllowanceUsd": 0.22
+  },
+  {
+    "id": "cd_06",
+    "title": "Polymer clay pastel sampler",
+    "category": "Crafts & DIY",
+    "description": "12 oven-bake colors for mini sweets sculpting.",
+    "vibe": [
+      "Cute",
+      "Pastel"
+    ],
+    "image": "https://images.pexels.com/photos/9000000/pexels-photo-9000000.jpeg?auto=compress&cs=tinysrgb&w=480&h=480&fit=crop",
+    "retailYen": 680,
+    "supplierUnitCostUsd": 0.85,
+    "expectedJapanToUSShippingAllocationUsd": 0.45,
+    "handlingAllowanceUsd": 0.22
+  },
+  {
+    "id": "cd_07",
+    "title": "Aquabeads star refill jar",
+    "category": "Crafts & DIY",
+    "description": "Fuse beads for sparkly coasters and charms.",
+    "vibe": [
+      "Cute",
+      "Sparkle"
+    ],
+    "image": "https://images.pexels.com/photos/1128678/pexels-photo-1128678.jpeg?auto=compress&cs=tinysrgb&w=480&h=480&fit=crop",
+    "retailYen": 520,
+    "supplierUnitCostUsd": 0.85,
+    "expectedJapanToUSShippingAllocationUsd": 0.45,
+    "handlingAllowanceUsd": 0.22
+  },
+  {
+    "id": "cd_08",
+    "title": "Masking tape grid washi duo",
+    "category": "Crafts & DIY",
+    "description": "Planner-friendly lines and dot grids.",
+    "vibe": [
+      "Cute",
+      "Colorful"
+    ],
+    "image": "https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg?auto=compress&cs=tinysrgb&w=480&h=480&fit=crop",
+    "retailYen": 310,
+    "supplierUnitCostUsd": 0.85,
+    "expectedJapanToUSShippingAllocationUsd": 0.45,
+    "handlingAllowanceUsd": 0.22
+  },
+  {
+    "id": "cd_09",
+    "title": "Foil origami metallic pack",
+    "category": "Crafts & DIY",
+    "description": "Shiny squares that hold crisp folds.",
+    "vibe": [
+      "Sparkle",
+      "Cute"
+    ],
+    "image": "https://images.pexels.com/photos/1646314/pexels-photo-1646314.jpeg?auto=compress&cs=tinysrgb&w=480&h=480&fit=crop",
+    "retailYen": 290,
+    "supplierUnitCostUsd": 0.85,
+    "expectedJapanToUSShippingAllocationUsd": 0.45,
+    "handlingAllowanceUsd": 0.22
+  },
+  {
+    "id": "cd_10",
+    "title": "Tombow fudenosuke brush pen",
+    "category": "Crafts & DIY",
+    "description": "Small brush tip for kawaii lettering practice.",
+    "vibe": [
+      "Cute",
+      "Glow"
+    ],
+    "image": "https://images.pexels.com/photos/205961/pexels-photo-205961.jpeg?auto=compress&cs=tinysrgb&w=480&h=480&fit=crop",
+    "retailYen": 380,
+    "supplierUnitCostUsd": 0.85,
+    "expectedJapanToUSShippingAllocationUsd": 0.45,
+    "handlingAllowanceUsd": 0.22
   }
 ]
-
