@@ -1004,6 +1004,14 @@ body{
   color: var(--pink);
   letter-spacing:.04em;
   margin-bottom: 2px;
+  line-height: 1.35;
+  /* Fixed two-line block so every collection card header lines up. */
+  min-height: calc(2 * 1.35em);
+  max-height: calc(2 * 1.35em);
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
 }
 .showcaseTitle{
   margin:0;
@@ -1011,6 +1019,14 @@ body{
   font-weight: 800;
   letter-spacing: -.01em;
   font-family: var(--font-display);
+  line-height: 1.28;
+  /* Fixed two-line block (same idea as kanji row) for carousel alignment. */
+  min-height: calc(2 * 1.28em);
+  max-height: calc(2 * 1.28em);
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
   /* Hachi Maru Pop is 400-only; faux-bold with stroke to keep the same font. */
   -webkit-text-stroke: 0.8px currentColor;
   paint-order: stroke fill;
