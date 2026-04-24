@@ -117,7 +117,9 @@ const state = {
   items: [],
   bonusItems: [],
   products: [],
-  activeCategory: "Japanese Candy Party",
+  // Default to "All" so the catalog matches whatever categories exist in the
+  // loaded dataset (demo JSON uses Snacks/Beauty/…, not the full JP taxonomy).
+  activeCategory: "All",
   activeSubcategory: null,
   catalogPage: 1,
   catalogPageSize: 18,
@@ -565,10 +567,17 @@ const MISSIONS = [
 
 boot();
 
+function syncActiveCategoryWithCatalog() {
+  if (state.activeCategory === "All") return;
+  const has = state.products.some((p) => p.category === state.activeCategory);
+  if (!has) state.activeCategory = "All";
+}
+
 async function boot() {
   renderBoxPicker();
   wireEvents();
   state.products = await loadProducts();
+  syncActiveCategoryWithCatalog();
   applyTierPricingToCatalog();
   renderFilters();
   renderShipping();
@@ -724,7 +733,7 @@ function wireEvents() {
 
   if (els.backToCollectionsBtn) {
     els.backToCollectionsBtn.addEventListener("click", () => {
-      state.activeCategory = "Japanese Candy Party";
+      state.activeCategory = "All";
       state.activeSubcategory = null;
       state.catalogPage = 1;
       state.searchQuery = "";
@@ -3185,8 +3194,14 @@ function playSfx(type) {
 }
 
 function updateSoundToggleLabel() {
-  els.soundToggle.textContent = state.soundEnabled ? "Sound On" : "Sound Off";
-  els.soundToggle.setAttribute("aria-pressed", state.soundEnabled ? "true" : "false");
+  const on = state.soundEnabled;
+  const compact =
+    typeof window !== "undefined" &&
+    window.matchMedia &&
+    window.matchMedia("(max-width: 720px)").matches;
+  els.soundToggle.textContent = compact ? (on ? "🔊" : "🔇") : on ? "Sound On" : "Sound Off";
+  els.soundToggle.setAttribute("aria-pressed", on ? "true" : "false");
+  els.soundToggle.setAttribute("aria-label", on ? "Sound on" : "Sound off");
 }
 
 function byId(id) {

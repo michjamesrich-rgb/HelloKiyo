@@ -7,12 +7,17 @@
     "doc": "docs"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "cf:login": "wrangler login",
+    "cf:pages:create": "wrangler pages project create hellokiyo --production-branch main",
+    "cf:deploy": "wrangler pages deploy . --project-name hellokiyo --branch main --commit-dirty=true",
+    "cf:dns:pages": "node scripts/cf-add-pages-dns.mjs"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "playwright": "^1.59.1"
+    "playwright": "^1.59.1",
+    "wrangler": "^4.85.0"
   }
 }

@@ -2095,7 +2095,29 @@ body{
   .hero{margin-top: 18px}
   .heroCard{padding: 22px}
   .heroTitle{font-size: 28px}
-  .topbar{padding: 10px 14px}
+  .topbar{
+    padding: 10px 12px;
+    flex-wrap: wrap;
+    row-gap: 8px;
+    column-gap: 10px;
+    align-items: center;
+  }
+  .brand{
+    min-width: 0;
+    flex: 1 1 auto;
+  }
+  .topNav{
+    flex: 1 1 auto;
+    min-width: 0;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    gap: 6px 8px;
+  }
+  .soundToggle{
+    flex-shrink: 0;
+    padding: 8px 10px;
+    min-width: 40px;
+  }
   .brandMark{width:40px; height:40px}
   .brandMarkSvg{width:34px; height:34px}
   .wordmarkHello, .wordmarkKiyo{font-size: 20px}
