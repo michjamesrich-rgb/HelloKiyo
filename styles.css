@@ -1200,6 +1200,81 @@ body{
   transition: transform .25s ease;
 }
 .card:hover .thumbImg{transform: scale(1.04)}
+.thumbPlaceholder{
+  width:100%;
+  height:100%;
+  min-height: 150px;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  gap: 6px;
+  padding: 10px 10px 12px;
+  box-sizing:border-box;
+  background: linear-gradient(165deg, rgba(248,250,252,0.98), rgba(226,232,240,0.9));
+}
+.thumbPlaceholderArt{
+  flex:1;
+  min-height:0;
+  width:100%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  opacity:0.4;
+  filter: grayscale(1);
+}
+.thumbPlaceholderArt svg{
+  width:100%;
+  height:auto;
+  max-height: 120px;
+  display:block;
+}
+.thumbPlaceholderSoon{
+  font-size:10px;
+  font-weight:800;
+  letter-spacing:0.08em;
+  text-transform:uppercase;
+  color:#64748b;
+}
+.thumbPlaceholder--dialog{
+  min-height: 240px;
+  border-radius: var(--radius-sm);
+  border:1px solid var(--border);
+  background: linear-gradient(165deg, rgba(248,250,252,0.99), rgba(241,245,249,0.92));
+}
+.thumbPlaceholder--dialog .thumbPlaceholderArt svg{
+  max-height: 200px;
+}
+.thumbPlaceholder--compact{
+  min-height: 128px;
+  height: 128px;
+  border-radius: 12px;
+}
+.thumbPlaceholder--compact .thumbPlaceholderSoon{
+  font-size: 8.5px;
+}
+.thumbPlaceholder--compact .thumbPlaceholderArt svg{
+  max-height: 70px;
+}
+.microThumbPlaceholder{
+  width: 36px;
+  height: 36px;
+  border-radius: 8px;
+  display:grid;
+  place-items:center;
+  font-size: 17px;
+  line-height:1;
+  background: linear-gradient(145deg, rgba(248,250,252,0.98), rgba(203,213,225,0.88));
+  border: 1px solid rgba(148,163,184,0.45);
+  flex:0 0 auto;
+  filter: grayscale(1);
+  opacity: 0.9;
+}
+.microThumbPlaceholder--strip{
+  width: 38px;
+  height: 38px;
+  box-shadow: 0 6px 12px rgba(2,6,23,.12);
+}
 .thumb .heartBadge{
   position:absolute;
   top: 10px;
@@ -1808,14 +1883,17 @@ body{
 .dialogLabel{font-weight:900; font-size:13px}
 .dialogChips{display:flex; gap:8px; flex-wrap:wrap}
 .dialogFooter{display:flex; justify-content:flex-end}
-.productDialogImage{
+.productDialogMedia{
+  width:100%;
+  margin-bottom:10px;
+}
+.productDialogMedia .productDialogImage{
   width:100%;
   border-radius: var(--radius-sm);
   border:1px solid var(--border);
   max-height:300px;
   object-fit:cover;
   display:block;
-  margin-bottom:10px;
 }
 .productDialogSource{
   display:inline-block;

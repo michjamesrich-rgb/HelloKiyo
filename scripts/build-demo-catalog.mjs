@@ -1,6 +1,6 @@
 /**
- * Regenerates data/products.json with 10+ demo SKUs per main category,
- * using stable Pexels CDN URLs (verified HTTP 200).
+ * Regenerates data/products.json with 10+ demo SKUs per main category.
+ * Product photos are omitted; the storefront renders category placeholders (“Image coming soon”).
  *
  * Run: node scripts/build-demo-catalog.mjs
  */
@@ -11,28 +11,6 @@ import { fileURLToPath } from "node:url";
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const outPath = path.join(__dirname, "../data/products.json");
 
-const img = (id) =>
-  `https://images.pexels.com/photos/${id}/pexels-photo-${id}.jpeg?auto=compress&cs=tinysrgb&w=480&h=480&fit=crop`;
-
-/** 70 IDs — first 59 unique (curl-checked), remainder repeat for 7×10 rows */
-const PHOTO_IDS = [
-  2000000, 3000000, 4000000, 5000000, 6000000, 8000000, 9000000, 1128678, 1640777, 1646314,
-  205961, 3064254, 3789885, 4041392, 4052388, 4110250, 5632391, 5632401, 7261425, 175659,
-  1503602, 1556228, 1576045, 1619569, 1639562, 1656688, 1697912, 1702373, 1839919, 1854189,
-  1876279, 1893102, 1912055, 1933900, 1995842, 2033997, 2059191, 2074129, 2089718, 2119761,
-  2130134, 2178723, 2209114, 2238303, 2255937, 2261758, 2280536, 2291361, 2304777, 2329446,
-  2341298, 2364879, 2387793, 2398984, 2410524, 2421933, 2433214, 2444256, 2466488,
-  2000000, 3000000, 4000000, 5000000, 6000000, 8000000, 9000000, 1128678, 1640777, 1646314,
-  205961,
-];
-
-let i = 0;
-function nextImage() {
-  const id = PHOTO_IDS[i % PHOTO_IDS.length];
-  i += 1;
-  return img(id);
-}
-
 function p(id, title, category, description, vibe, retailYen = 480) {
   return {
     id,
@@ -40,7 +18,7 @@ function p(id, title, category, description, vibe, retailYen = 480) {
     category,
     description,
     vibe,
-    image: nextImage(),
+    image: "",
     retailYen,
     supplierUnitCostUsd: 0.85,
     expectedJapanToUSShippingAllocationUsd: 0.45,

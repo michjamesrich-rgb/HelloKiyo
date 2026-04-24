@@ -77,7 +77,7 @@ const els = {
   productDialog: byId("productDialog"),
   productDialogTitle: byId("productDialogTitle"),
   productDialogCategory: byId("productDialogCategory"),
-  productDialogImage: byId("productDialogImage"),
+  productDialogMedia: byId("productDialogMedia"),
   productDialogDesc: byId("productDialogDesc"),
   productDialogAddBtn: byId("productDialogAddBtn"),
   soundToggle: byId("soundToggle"),
@@ -880,15 +880,24 @@ function renderBoxMiniStrip() {
   const items = state.items.concat(state.bonusItems).slice(-18);
   els.boxMiniStrip.innerHTML = "";
   for (const it of items) {
-    const img = document.createElement("img");
-    img.className = "boxMiniThumb";
-    img.alt = it.title || "Item";
-    img.loading = "lazy";
-    img.src = it.image || buildFallbackImageDataUrl(it);
-    img.addEventListener("error", () => {
-      img.src = buildFallbackImageDataUrl(it);
-    });
-    els.boxMiniStrip.appendChild(img);
+    if (hasProductPhoto(it)) {
+      const img = document.createElement("img");
+      img.className = "boxMiniThumb";
+      img.alt = it.title || "Item";
+      img.loading = "lazy";
+      img.src = it.image;
+      img.addEventListener("error", () => {
+        const w = document.createElement("div");
+        w.innerHTML = microCategoryThumbHTML(it, "strip", "boxMiniThumb boxMiniThumb--placeholder");
+        const node = w.firstElementChild;
+        if (node) img.replaceWith(node);
+      });
+      els.boxMiniStrip.appendChild(img);
+    } else {
+      const w = document.createElement("div");
+      w.innerHTML = microCategoryThumbHTML(it, "strip", "boxMiniThumb boxMiniThumb--placeholder");
+      if (w.firstElementChild) els.boxMiniStrip.appendChild(w.firstElementChild);
+    }
   }
 }
 
@@ -1054,10 +1063,12 @@ function renderCart() {
     const row = document.createElement("div");
     row.className = "cartItem";
     const isBonus = Boolean(it._isBonus);
-    const imgSrc = it.image || buildFallbackImageDataUrl(it);
+    const thumbCell = hasProductPhoto(it)
+      ? `<img class="cartItemThumb" src="${escapeHtml(it.image)}" alt="${escapeHtml(it.title)}" loading="lazy" />`
+      : microCategoryThumbHTML(it, "cart", "cartItemThumb cartItemThumb--placeholder");
     row.innerHTML = `
       <div class="cartLeft">
-        <img class="cartItemThumb" src="${escapeHtml(imgSrc)}" alt="${escapeHtml(it.title)}" loading="lazy" />
+        ${thumbCell}
         <div class="cartItemInfo">
           <div class="cartItemTitle" title="${escapeHtml(it.title)}">${escapeHtml(it.title)}</div>
           <div class="cartItemMeta">${
@@ -1076,9 +1087,12 @@ function renderCart() {
       }
     `;
     const thumb = row.querySelector(".cartItemThumb");
-    if (thumb) {
+    if (thumb && thumb.tagName === "IMG") {
       thumb.addEventListener("error", () => {
-        thumb.src = buildFallbackImageDataUrl(it);
+        const w = document.createElement("div");
+        w.innerHTML = microCategoryThumbHTML(it, "cart", "cartItemThumb cartItemThumb--placeholder");
+        const node = w.firstElementChild;
+        if (node) thumb.replaceWith(node);
       });
     }
     const removeBtn = row.querySelector(".remove");
@@ -1259,7 +1273,9 @@ function renderBoxDialog() {
   for (const g of groups.values()) {
     const p = g.product;
     const qty = g.instances.length;
-    const imgSrc = p.image || buildFallbackImageDataUrl(p);
+    const thumbBlock = hasProductPhoto(p)
+      ? `<img class="boxDialogItemImg" src="${escapeHtml(p.image)}" alt="${escapeHtml(p.title)}" loading="lazy" />`
+      : catalogThumbPlaceholderHTML(p, "compact");
     const desc =
       p.description?.trim() ||
       composeDescription({
@@ -1292,7 +1308,7 @@ function renderBoxDialog() {
     card.setAttribute("role", "listitem");
     card.innerHTML = `
       <div class="boxDialogItemImgWrap">
-        <img class="boxDialogItemImg" src="${escapeHtml(imgSrc)}" alt="${escapeHtml(p.title)}" loading="lazy" />
+        ${thumbBlock}
       </div>
       <div class="boxDialogItemBody">
         <div class="boxDialogItemCat">${escapeHtml(catTape)}</div>
@@ -1331,9 +1347,12 @@ function renderBoxDialog() {
     `;
 
     const imgEl = card.querySelector(".boxDialogItemImg");
-    if (imgEl) {
+    if (imgEl && imgEl.tagName === "IMG") {
       imgEl.addEventListener("error", () => {
-        imgEl.src = buildFallbackImageDataUrl(p);
+        const w = document.createElement("div");
+        w.innerHTML = catalogThumbPlaceholderHTML(p, "compact");
+        const node = w.firstElementChild;
+        if (node) imgEl.replaceWith(node);
       });
     }
 
@@ -1820,6 +1839,64 @@ function categoryIconSvg(catName, decor) {
 </svg>`;
 }
 
+function categoryDecorForProduct(categoryName) {
+  return (
+    CATEGORY_DECOR[categoryName] || {
+      kanji: categoryName,
+      cardA: "#e2e8f0",
+      cardB: "#cbd5e1",
+      emoji: "✨",
+      teaser: "",
+    }
+  );
+}
+
+function hasProductPhoto(p) {
+  return Boolean(String(p?.image || "").trim());
+}
+
+/** Grey category illustration + “Image coming soon” (matches showcase art style). */
+function catalogThumbPlaceholderHTML(p, variant = "card") {
+  const decor = categoryDecorForProduct(p.category);
+  const icon = categoryIconSvg(p.category, decor);
+  const mod =
+    variant === "dialog"
+      ? " thumbPlaceholder--dialog"
+      : variant === "compact"
+        ? " thumbPlaceholder--compact"
+        : "";
+  const al = `Image coming soon — ${p.title || "item"}`;
+  return `<div class="thumbPlaceholder${mod}" role="img" aria-label="${escapeHtml(al)}">
+    <div class="thumbPlaceholderArt" aria-hidden="true">${icon}</div>
+    <span class="thumbPlaceholderSoon">Image coming soon</span>
+  </div>`;
+}
+
+function catalogThumbMediaHTML(p, variant = "card") {
+  if (hasProductPhoto(p)) {
+    return `<img class="thumbImg" src="${escapeHtml(p.image)}" alt="${escapeHtml(p.title)}" loading="lazy" />`;
+  }
+  return catalogThumbPlaceholderHTML(p, variant);
+}
+
+function productDialogMediaInnerHTML(p) {
+  if (hasProductPhoto(p)) {
+    return `<img class="productDialogImage" src="${escapeHtml(p.image)}" alt="${escapeHtml(p.title)}" />`;
+  }
+  return catalogThumbPlaceholderHTML(p, "dialog");
+}
+
+/** Tiny grey tile for cart rows and box mini strip (emoji only). */
+function microCategoryThumbHTML(p, size = "cart", extraClass = "") {
+  const decor = categoryDecorForProduct(p.category);
+  const al = `Image coming soon — ${p.title || "item"}`;
+  const sz = size === "strip" ? " microThumbPlaceholder--strip" : "";
+  const x = extraClass ? ` ${extraClass}` : "";
+  return `<div class="microThumbPlaceholder${sz}${x}" role="img" aria-label="${escapeHtml(
+    al
+  )}" title="Image coming soon"><span aria-hidden="true">${escapeHtml(decor.emoji)}</span></div>`;
+}
+
 function renderShowcase() {
   if (!els.showcaseGrid) return;
   els.showcaseGrid.innerHTML = "";
@@ -2184,11 +2261,7 @@ function renderCatalog() {
     const bandLabel = band === "Low" ? "Low impact" : band === "Medium" ? "Med impact" : "High impact";
     const teaser = shortTeaser(p);
 
-    const img = p.image
-      ? `<img class="thumbImg" src="${escapeHtml(p.image)}" alt="${escapeHtml(
-          p.title
-        )}" loading="lazy" />`
-      : "";
+    const img = catalogThumbMediaHTML(p, "card");
 
     const subLabel = p.subcategoryLabel && p.subcategoryLabel !== "More favorites"
       ? `${p.subcategoryEmoji || ""} ${p.subcategoryLabel}`.trim()
@@ -2227,7 +2300,10 @@ function renderCatalog() {
     const imgEl = card.querySelector(".thumbImg");
     if (imgEl) {
       imgEl.addEventListener("error", () => {
-        imgEl.src = buildFallbackImageDataUrl(p);
+        const w = document.createElement("div");
+        w.innerHTML = catalogThumbPlaceholderHTML(p, "card");
+        const node = w.firstElementChild;
+        if (node) imgEl.replaceWith(node);
       });
     }
     card.querySelector(".cardTitle").addEventListener("click", () => openProductDialog(p));
@@ -2298,7 +2374,8 @@ const COLOR_KEYWORDS = [
 ];
 function visualAppeal(p) {
   let score = 0;
-  if (p.image) score += 5;
+  if (hasProductPhoto(p)) score += 5;
+  else score += 3;
   if (p.subcategoryId && p.subcategoryId !== "other") score += 2;
   const blob = `${p.title || ""} ${p.description || ""} ${(p.vibe || []).join(
     " "
@@ -2445,11 +2522,13 @@ function openProductDialog(p) {
       )}" target="_blank" rel="noopener noreferrer">View source product ↗</a></div>`
     : "";
   els.productDialogDesc.innerHTML = `${escapeHtml(desc)}${safeSource}`;
-  els.productDialogImage.src = p.image || buildFallbackImageDataUrl(p);
-  els.productDialogImage.alt = p.title;
-  els.productDialogImage.onerror = () => {
-    els.productDialogImage.src = buildFallbackImageDataUrl(p);
-  };
+  els.productDialogMedia.innerHTML = productDialogMediaInnerHTML(p);
+  const imgEl = els.productDialogMedia.querySelector(".productDialogImage");
+  if (imgEl) {
+    imgEl.onerror = () => {
+      imgEl.src = buildFallbackImageDataUrl(p);
+    };
+  }
   els.productDialog.showModal();
 }
 

@@ -8,7 +8,7 @@
       "Sweet",
       "Pink"
     ],
-    "image": "https://images.pexels.com/photos/2000000/pexels-photo-2000000.jpeg?auto=compress&cs=tinysrgb&w=480&h=480&fit=crop",
+    "image": "",
     "retailYen": 320,
     "supplierUnitCostUsd": 0.85,
     "expectedJapanToUSShippingAllocationUsd": 0.45,
@@ -23,7 +23,7 @@
       "Sweet",
       "Colorful"
     ],
-    "image": "https://images.pexels.com/photos/3000000/pexels-photo-3000000.jpeg?auto=compress&cs=tinysrgb&w=480&h=480&fit=crop",
+    "image": "",
     "retailYen": 280,
     "supplierUnitCostUsd": 0.85,
     "expectedJapanToUSShippingAllocationUsd": 0.45,
@@ -38,7 +38,7 @@
       "Sweet",
       "Fun"
     ],
-    "image": "https://images.pexels.com/photos/4000000/pexels-photo-4000000.jpeg?auto=compress&cs=tinysrgb&w=480&h=480&fit=crop",
+    "image": "",
     "retailYen": 220,
     "supplierUnitCostUsd": 0.85,
     "expectedJapanToUSShippingAllocationUsd": 0.45,
@@ -53,7 +53,7 @@
       "Sweet",
       "Sparkle"
     ],
-    "image": "https://images.pexels.com/photos/5000000/pexels-photo-5000000.jpeg?auto=compress&cs=tinysrgb&w=480&h=480&fit=crop",
+    "image": "",
     "retailYen": 180,
     "supplierUnitCostUsd": 0.85,
     "expectedJapanToUSShippingAllocationUsd": 0.45,
@@ -68,7 +68,7 @@
       "Sweet",
       "Pink"
     ],
-    "image": "https://images.pexels.com/photos/6000000/pexels-photo-6000000.jpeg?auto=compress&cs=tinysrgb&w=480&h=480&fit=crop",
+    "image": "",
     "retailYen": 260,
     "supplierUnitCostUsd": 0.85,
     "expectedJapanToUSShippingAllocationUsd": 0.45,
@@ -83,7 +83,7 @@
       "Sweet",
       "Glow"
     ],
-    "image": "https://images.pexels.com/photos/8000000/pexels-photo-8000000.jpeg?auto=compress&cs=tinysrgb&w=480&h=480&fit=crop",
+    "image": "",
     "retailYen": 340,
     "supplierUnitCostUsd": 0.85,
     "expectedJapanToUSShippingAllocationUsd": 0.45,
@@ -98,7 +98,7 @@
       "Sweet",
       "Fun"
     ],
-    "image": "https://images.pexels.com/photos/9000000/pexels-photo-9000000.jpeg?auto=compress&cs=tinysrgb&w=480&h=480&fit=crop",
+    "image": "",
     "retailYen": 240,
     "supplierUnitCostUsd": 0.85,
     "expectedJapanToUSShippingAllocationUsd": 0.45,
@@ -113,7 +113,7 @@
       "Sweet",
       "Colorful"
     ],
-    "image": "https://images.pexels.com/photos/1128678/pexels-photo-1128678.jpeg?auto=compress&cs=tinysrgb&w=480&h=480&fit=crop",
+    "image": "",
     "retailYen": 200,
     "supplierUnitCostUsd": 0.85,
     "expectedJapanToUSShippingAllocationUsd": 0.45,
@@ -128,7 +128,7 @@
       "Sweet",
       "Glow"
     ],
-    "image": "https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg?auto=compress&cs=tinysrgb&w=480&h=480&fit=crop",
+    "image": "",
     "retailYen": 360,
     "supplierUnitCostUsd": 0.85,
     "expectedJapanToUSShippingAllocationUsd": 0.45,
@@ -143,7 +143,7 @@
       "Sweet",
       "Sparkle"
     ],
-    "image": "https://images.pexels.com/photos/1646314/pexels-photo-1646314.jpeg?auto=compress&cs=tinysrgb&w=480&h=480&fit=crop",
+    "image": "",
     "retailYen": 300,
     "supplierUnitCostUsd": 0.85,
     "expectedJapanToUSShippingAllocationUsd": 0.45,
@@ -158,7 +158,7 @@
       "Glow",
       "Pink"
     ],
-    "image": "https://images.pexels.com/photos/205961/pexels-photo-205961.jpeg?auto=compress&cs=tinysrgb&w=480&h=480&fit=crop",
+    "image": "",
     "retailYen": 890,
     "supplierUnitCostUsd": 0.85,
     "expectedJapanToUSShippingAllocationUsd": 0.45,
@@ -173,7 +173,7 @@
       "Pink",
       "Glow"
     ],
-    "image": "https://images.pexels.com/photos/3064254/pexels-photo-3064254.jpeg?auto=compress&cs=tinysrgb&w=480&h=480&fit=crop",
+    "image": "",
     "retailYen": 420,
     "supplierUnitCostUsd": 0.85,
     "expectedJapanToUSShippingAllocationUsd": 0.45,
@@ -188,7 +188,7 @@
       "Glow",
       "Cute"
     ],
-    "image": "https://images.pexels.com/photos/3789885/pexels-photo-3789885.jpeg?auto=compress&cs=tinysrgb&w=480&h=480&fit=crop",
+    "image": "",
     "retailYen": 560,
     "supplierUnitCostUsd": 0.85,
     "expectedJapanToUSShippingAllocationUsd": 0.45,
@@ -203,7 +203,7 @@
       "Glow",
       "Sparkle"
     ],
-    "image": "https://images.pexels.com/photos/4041392/pexels-photo-4041392.jpeg?auto=compress&cs=tinysrgb&w=480&h=480&fit=crop",
+    "image": "",
     "retailYen": 320,
     "supplierUnitCostUsd": 0.85,
     "expectedJapanToUSShippingAllocationUsd": 0.45,
@@ -218,7 +218,7 @@
       "Glow",
       "Colorful"
     ],
-    "image": "https://images.pexels.com/photos/4052388/pexels-photo-4052388.jpeg?auto=compress&cs=tinysrgb&w=480&h=480&fit=crop",
+    "image": "",
     "retailYen": 780,
     "supplierUnitCostUsd": 0.85,
     "expectedJapanToUSShippingAllocationUsd": 0.45,
@@ -233,7 +233,7 @@
       "Glow",
       "Cute"
     ],
-    "image": "https://images.pexels.com/photos/4110250/pexels-photo-4110250.jpeg?auto=compress&cs=tinysrgb&w=480&h=480&fit=crop",
+    "image": "",
     "retailYen": 440,
     "supplierUnitCostUsd": 0.85,
     "expectedJapanToUSShippingAllocationUsd": 0.45,
@@ -248,7 +248,7 @@
       "Pink",
       "Sparkle"
     ],
-    "image": "https://images.pexels.com/photos/5632391/pexels-photo-5632391.jpeg?auto=compress&cs=tinysrgb&w=480&h=480&fit=crop",
+    "image": "",
     "retailYen": 380,
     "supplierUnitCostUsd": 0.85,
     "expectedJapanToUSShippingAllocationUsd": 0.45,
@@ -263,7 +263,7 @@
       "Glow",
       "Colorful"
     ],
-    "image": "https://images.pexels.com/photos/5632401/pexels-photo-5632401.jpeg?auto=compress&cs=tinysrgb&w=480&h=480&fit=crop",
+    "image": "",
     "retailYen": 520,
     "supplierUnitCostUsd": 0.85,
     "expectedJapanToUSShippingAllocationUsd": 0.45,
@@ -278,7 +278,7 @@
       "Glow",
       "Pink"
     ],
-    "image": "https://images.pexels.com/photos/7261425/pexels-photo-7261425.jpeg?auto=compress&cs=tinysrgb&w=480&h=480&fit=crop",
+    "image": "",
     "retailYen": 960,
     "supplierUnitCostUsd": 0.85,
     "expectedJapanToUSShippingAllocationUsd": 0.45,
@@ -293,7 +293,7 @@
       "Glow",
       "Cute"
     ],
-    "image": "https://images.pexels.com/photos/175659/pexels-photo-175659.jpeg?auto=compress&cs=tinysrgb&w=480&h=480&fit=crop",
+    "image": "",
     "retailYen": 640,
     "supplierUnitCostUsd": 0.85,
     "expectedJapanToUSShippingAllocationUsd": 0.45,
@@ -308,7 +308,7 @@
       "Savory",
       "Fun"
     ],
-    "image": "https://images.pexels.com/photos/1503602/pexels-photo-1503602.jpeg?auto=compress&cs=tinysrgb&w=480&h=480&fit=crop",
+    "image": "",
     "retailYen": 220,
     "supplierUnitCostUsd": 0.85,
     "expectedJapanToUSShippingAllocationUsd": 0.45,
@@ -323,7 +323,7 @@
       "Savory",
       "Sparkle"
     ],
-    "image": "https://images.pexels.com/photos/1556228/pexels-photo-1556228.jpeg?auto=compress&cs=tinysrgb&w=480&h=480&fit=crop",
+    "image": "",
     "retailYen": 240,
     "supplierUnitCostUsd": 0.85,
     "expectedJapanToUSShippingAllocationUsd": 0.45,
@@ -338,7 +338,7 @@
       "Savory",
       "Colorful"
     ],
-    "image": "https://images.pexels.com/photos/1576045/pexels-photo-1576045.jpeg?auto=compress&cs=tinysrgb&w=480&h=480&fit=crop",
+    "image": "",
     "retailYen": 260,
     "supplierUnitCostUsd": 0.85,
     "expectedJapanToUSShippingAllocationUsd": 0.45,
@@ -353,7 +353,7 @@
       "Savory",
       "Fun"
     ],
-    "image": "https://images.pexels.com/photos/1619569/pexels-photo-1619569.jpeg?auto=compress&cs=tinysrgb&w=480&h=480&fit=crop",
+    "image": "",
     "retailYen": 250,
     "supplierUnitCostUsd": 0.85,
     "expectedJapanToUSShippingAllocationUsd": 0.45,
@@ -368,7 +368,7 @@
       "Savory",
       "Cute"
     ],
-    "image": "https://images.pexels.com/photos/1639562/pexels-photo-1639562.jpeg?auto=compress&cs=tinysrgb&w=480&h=480&fit=crop",
+    "image": "",
     "retailYen": 230,
     "supplierUnitCostUsd": 0.85,
     "expectedJapanToUSShippingAllocationUsd": 0.45,
@@ -383,7 +383,7 @@
       "Savory",
       "Colorful"
     ],
-    "image": "https://images.pexels.com/photos/1656688/pexels-photo-1656688.jpeg?auto=compress&cs=tinysrgb&w=480&h=480&fit=crop",
+    "image": "",
     "retailYen": 280,
     "supplierUnitCostUsd": 0.85,
     "expectedJapanToUSShippingAllocationUsd": 0.45,
@@ -398,7 +398,7 @@
       "Savory",
       "Pink"
     ],
-    "image": "https://images.pexels.com/photos/1697912/pexels-photo-1697912.jpeg?auto=compress&cs=tinysrgb&w=480&h=480&fit=crop",
+    "image": "",
     "retailYen": 210,
     "supplierUnitCostUsd": 0.85,
     "expectedJapanToUSShippingAllocationUsd": 0.45,
@@ -413,7 +413,7 @@
       "Savory",
       "Fun"
     ],
-    "image": "https://images.pexels.com/photos/1702373/pexels-photo-1702373.jpeg?auto=compress&cs=tinysrgb&w=480&h=480&fit=crop",
+    "image": "",
     "retailYen": 270,
     "supplierUnitCostUsd": 0.85,
     "expectedJapanToUSShippingAllocationUsd": 0.45,
@@ -428,7 +428,7 @@
       "Savory",
       "Sparkle"
     ],
-    "image": "https://images.pexels.com/photos/1839919/pexels-photo-1839919.jpeg?auto=compress&cs=tinysrgb&w=480&h=480&fit=crop",
+    "image": "",
     "retailYen": 235,
     "supplierUnitCostUsd": 0.85,
     "expectedJapanToUSShippingAllocationUsd": 0.45,
@@ -443,7 +443,7 @@
       "Savory",
       "Glow"
     ],
-    "image": "https://images.pexels.com/photos/1854189/pexels-photo-1854189.jpeg?auto=compress&cs=tinysrgb&w=480&h=480&fit=crop",
+    "image": "",
     "retailYen": 225,
     "supplierUnitCostUsd": 0.85,
     "expectedJapanToUSShippingAllocationUsd": 0.45,
@@ -458,7 +458,7 @@
       "Cute",
       "Pastel"
     ],
-    "image": "https://images.pexels.com/photos/1876279/pexels-photo-1876279.jpeg?auto=compress&cs=tinysrgb&w=480&h=480&fit=crop",
+    "image": "",
     "retailYen": 180,
     "supplierUnitCostUsd": 0.85,
     "expectedJapanToUSShippingAllocationUsd": 0.45,
@@ -473,7 +473,7 @@
       "Cute",
       "Colorful"
     ],
-    "image": "https://images.pexels.com/photos/1893102/pexels-photo-1893102.jpeg?auto=compress&cs=tinysrgb&w=480&h=480&fit=crop",
+    "image": "",
     "retailYen": 120,
     "supplierUnitCostUsd": 0.85,
     "expectedJapanToUSShippingAllocationUsd": 0.45,
@@ -488,7 +488,7 @@
       "Cute",
       "Sparkle"
     ],
-    "image": "https://images.pexels.com/photos/1912055/pexels-photo-1912055.jpeg?auto=compress&cs=tinysrgb&w=480&h=480&fit=crop",
+    "image": "",
     "retailYen": 260,
     "supplierUnitCostUsd": 0.85,
     "expectedJapanToUSShippingAllocationUsd": 0.45,
@@ -503,7 +503,7 @@
       "Cute",
       "Pink"
     ],
-    "image": "https://images.pexels.com/photos/1933900/pexels-photo-1933900.jpeg?auto=compress&cs=tinysrgb&w=480&h=480&fit=crop",
+    "image": "",
     "retailYen": 220,
     "supplierUnitCostUsd": 0.85,
     "expectedJapanToUSShippingAllocationUsd": 0.45,
@@ -518,7 +518,7 @@
       "Cute",
       "Sweet"
     ],
-    "image": "https://images.pexels.com/photos/1995842/pexels-photo-1995842.jpeg?auto=compress&cs=tinysrgb&w=480&h=480&fit=crop",
+    "image": "",
     "retailYen": 160,
     "supplierUnitCostUsd": 0.85,
     "expectedJapanToUSShippingAllocationUsd": 0.45,
@@ -533,7 +533,7 @@
       "Cute",
       "Floral"
     ],
-    "image": "https://images.pexels.com/photos/2033997/pexels-photo-2033997.jpeg?auto=compress&cs=tinysrgb&w=480&h=480&fit=crop",
+    "image": "",
     "retailYen": 190,
     "supplierUnitCostUsd": 0.85,
     "expectedJapanToUSShippingAllocationUsd": 0.45,
@@ -548,7 +548,7 @@
       "Cute",
       "Sparkle"
     ],
-    "image": "https://images.pexels.com/photos/2059191/pexels-photo-2059191.jpeg?auto=compress&cs=tinysrgb&w=480&h=480&fit=crop",
+    "image": "",
     "retailYen": 150,
     "supplierUnitCostUsd": 0.85,
     "expectedJapanToUSShippingAllocationUsd": 0.45,
@@ -563,7 +563,7 @@
       "Cute",
       "Pastel"
     ],
-    "image": "https://images.pexels.com/photos/2074129/pexels-photo-2074129.jpeg?auto=compress&cs=tinysrgb&w=480&h=480&fit=crop",
+    "image": "",
     "retailYen": 200,
     "supplierUnitCostUsd": 0.85,
     "expectedJapanToUSShippingAllocationUsd": 0.45,
@@ -578,7 +578,7 @@
       "Cute",
       "Colorful"
     ],
-    "image": "https://images.pexels.com/photos/2089718/pexels-photo-2089718.jpeg?auto=compress&cs=tinysrgb&w=480&h=480&fit=crop",
+    "image": "",
     "retailYen": 210,
     "supplierUnitCostUsd": 0.85,
     "expectedJapanToUSShippingAllocationUsd": 0.45,
@@ -593,7 +593,7 @@
       "Cute",
       "Pink"
     ],
-    "image": "https://images.pexels.com/photos/2119761/pexels-photo-2119761.jpeg?auto=compress&cs=tinysrgb&w=480&h=480&fit=crop",
+    "image": "",
     "retailYen": 340,
     "supplierUnitCostUsd": 0.85,
     "expectedJapanToUSShippingAllocationUsd": 0.45,
@@ -608,7 +608,7 @@
       "Fun",
       "Savory"
     ],
-    "image": "https://images.pexels.com/photos/2130134/pexels-photo-2130134.jpeg?auto=compress&cs=tinysrgb&w=480&h=480&fit=crop",
+    "image": "",
     "retailYen": 220,
     "supplierUnitCostUsd": 0.85,
     "expectedJapanToUSShippingAllocationUsd": 0.45,
@@ -623,7 +623,7 @@
       "Sweet",
       "Glow"
     ],
-    "image": "https://images.pexels.com/photos/2178723/pexels-photo-2178723.jpeg?auto=compress&cs=tinysrgb&w=480&h=480&fit=crop",
+    "image": "",
     "retailYen": 240,
     "supplierUnitCostUsd": 0.85,
     "expectedJapanToUSShippingAllocationUsd": 0.45,
@@ -638,7 +638,7 @@
       "Fun",
       "Colorful"
     ],
-    "image": "https://images.pexels.com/photos/2209114/pexels-photo-2209114.jpeg?auto=compress&cs=tinysrgb&w=480&h=480&fit=crop",
+    "image": "",
     "retailYen": 260,
     "supplierUnitCostUsd": 0.85,
     "expectedJapanToUSShippingAllocationUsd": 0.45,
@@ -653,7 +653,7 @@
       "Sweet",
       "Cute"
     ],
-    "image": "https://images.pexels.com/photos/2238303/pexels-photo-2238303.jpeg?auto=compress&cs=tinysrgb&w=480&h=480&fit=crop",
+    "image": "",
     "retailYen": 200,
     "supplierUnitCostUsd": 0.85,
     "expectedJapanToUSShippingAllocationUsd": 0.45,
@@ -668,7 +668,7 @@
       "Sweet",
       "Fun"
     ],
-    "image": "https://images.pexels.com/photos/2255937/pexels-photo-2255937.jpeg?auto=compress&cs=tinysrgb&w=480&h=480&fit=crop",
+    "image": "",
     "retailYen": 230,
     "supplierUnitCostUsd": 0.85,
     "expectedJapanToUSShippingAllocationUsd": 0.45,
@@ -683,7 +683,7 @@
       "Savory",
       "Fun"
     ],
-    "image": "https://images.pexels.com/photos/2261758/pexels-photo-2261758.jpeg?auto=compress&cs=tinysrgb&w=480&h=480&fit=crop",
+    "image": "",
     "retailYen": 280,
     "supplierUnitCostUsd": 0.85,
     "expectedJapanToUSShippingAllocationUsd": 0.45,
@@ -698,7 +698,7 @@
       "Glow",
       "Colorful"
     ],
-    "image": "https://images.pexels.com/photos/2280536/pexels-photo-2280536.jpeg?auto=compress&cs=tinysrgb&w=480&h=480&fit=crop",
+    "image": "",
     "retailYen": 180,
     "supplierUnitCostUsd": 0.85,
     "expectedJapanToUSShippingAllocationUsd": 0.45,
@@ -713,7 +713,7 @@
       "Sweet",
       "Pink"
     ],
-    "image": "https://images.pexels.com/photos/2291361/pexels-photo-2291361.jpeg?auto=compress&cs=tinysrgb&w=480&h=480&fit=crop",
+    "image": "",
     "retailYen": 320,
     "supplierUnitCostUsd": 0.85,
     "expectedJapanToUSShippingAllocationUsd": 0.45,
@@ -728,7 +728,7 @@
       "Sweet",
       "Cute"
     ],
-    "image": "https://images.pexels.com/photos/2304777/pexels-photo-2304777.jpeg?auto=compress&cs=tinysrgb&w=480&h=480&fit=crop",
+    "image": "",
     "retailYen": 210,
     "supplierUnitCostUsd": 0.85,
     "expectedJapanToUSShippingAllocationUsd": 0.45,
@@ -743,7 +743,7 @@
       "Savory",
       "Sparkle"
     ],
-    "image": "https://images.pexels.com/photos/2329446/pexels-photo-2329446.jpeg?auto=compress&cs=tinysrgb&w=480&h=480&fit=crop",
+    "image": "",
     "retailYen": 225,
     "supplierUnitCostUsd": 0.85,
     "expectedJapanToUSShippingAllocationUsd": 0.45,
@@ -758,7 +758,7 @@
       "Cute",
       "Pink"
     ],
-    "image": "https://images.pexels.com/photos/2341298/pexels-photo-2341298.jpeg?auto=compress&cs=tinysrgb&w=480&h=480&fit=crop",
+    "image": "",
     "retailYen": 920,
     "supplierUnitCostUsd": 0.85,
     "expectedJapanToUSShippingAllocationUsd": 0.45,
@@ -773,7 +773,7 @@
       "Cute",
       "Pastel"
     ],
-    "image": "https://images.pexels.com/photos/2364879/pexels-photo-2364879.jpeg?auto=compress&cs=tinysrgb&w=480&h=480&fit=crop",
+    "image": "",
     "retailYen": 980,
     "supplierUnitCostUsd": 0.85,
     "expectedJapanToUSShippingAllocationUsd": 0.45,
@@ -788,7 +788,7 @@
       "Cute",
       "Sparkle"
     ],
-    "image": "https://images.pexels.com/photos/2387793/pexels-photo-2387793.jpeg?auto=compress&cs=tinysrgb&w=480&h=480&fit=crop",
+    "image": "",
     "retailYen": 640,
     "supplierUnitCostUsd": 0.85,
     "expectedJapanToUSShippingAllocationUsd": 0.45,
@@ -803,7 +803,7 @@
       "Cute",
       "Colorful"
     ],
-    "image": "https://images.pexels.com/photos/2398984/pexels-photo-2398984.jpeg?auto=compress&cs=tinysrgb&w=480&h=480&fit=crop",
+    "image": "",
     "retailYen": 720,
     "supplierUnitCostUsd": 0.85,
     "expectedJapanToUSShippingAllocationUsd": 0.45,
@@ -818,7 +818,7 @@
       "Cute",
       "Sweet"
     ],
-    "image": "https://images.pexels.com/photos/2410524/pexels-photo-2410524.jpeg?auto=compress&cs=tinysrgb&w=480&h=480&fit=crop",
+    "image": "",
     "retailYen": 1100,
     "supplierUnitCostUsd": 0.85,
     "expectedJapanToUSShippingAllocationUsd": 0.45,
@@ -833,7 +833,7 @@
       "Cute",
       "Sparkle"
     ],
-    "image": "https://images.pexels.com/photos/2421933/pexels-photo-2421933.jpeg?auto=compress&cs=tinysrgb&w=480&h=480&fit=crop",
+    "image": "",
     "retailYen": 760,
     "supplierUnitCostUsd": 0.85,
     "expectedJapanToUSShippingAllocationUsd": 0.45,
@@ -848,7 +848,7 @@
       "Cute",
       "Sweet"
     ],
-    "image": "https://images.pexels.com/photos/2433214/pexels-photo-2433214.jpeg?auto=compress&cs=tinysrgb&w=480&h=480&fit=crop",
+    "image": "",
     "retailYen": 890,
     "supplierUnitCostUsd": 0.85,
     "expectedJapanToUSShippingAllocationUsd": 0.45,
@@ -863,7 +863,7 @@
       "Cute",
       "Glow"
     ],
-    "image": "https://images.pexels.com/photos/2444256/pexels-photo-2444256.jpeg?auto=compress&cs=tinysrgb&w=480&h=480&fit=crop",
+    "image": "",
     "retailYen": 1250,
     "supplierUnitCostUsd": 0.85,
     "expectedJapanToUSShippingAllocationUsd": 0.45,
@@ -878,7 +878,7 @@
       "Cute",
       "Colorful"
     ],
-    "image": "https://images.pexels.com/photos/2466488/pexels-photo-2466488.jpeg?auto=compress&cs=tinysrgb&w=480&h=480&fit=crop",
+    "image": "",
     "retailYen": 680,
     "supplierUnitCostUsd": 0.85,
     "expectedJapanToUSShippingAllocationUsd": 0.45,
@@ -893,7 +893,7 @@
       "Cute",
       "Pink"
     ],
-    "image": "https://images.pexels.com/photos/2000000/pexels-photo-2000000.jpeg?auto=compress&cs=tinysrgb&w=480&h=480&fit=crop",
+    "image": "",
     "retailYen": 740,
     "supplierUnitCostUsd": 0.85,
     "expectedJapanToUSShippingAllocationUsd": 0.45,
@@ -908,7 +908,7 @@
       "Cute",
       "Floral"
     ],
-    "image": "https://images.pexels.com/photos/3000000/pexels-photo-3000000.jpeg?auto=compress&cs=tinysrgb&w=480&h=480&fit=crop",
+    "image": "",
     "retailYen": 420,
     "supplierUnitCostUsd": 0.85,
     "expectedJapanToUSShippingAllocationUsd": 0.45,
@@ -923,7 +923,7 @@
       "Cute",
       "Sweet"
     ],
-    "image": "https://images.pexels.com/photos/4000000/pexels-photo-4000000.jpeg?auto=compress&cs=tinysrgb&w=480&h=480&fit=crop",
+    "image": "",
     "retailYen": 360,
     "supplierUnitCostUsd": 0.85,
     "expectedJapanToUSShippingAllocationUsd": 0.45,
@@ -938,7 +938,7 @@
       "Cute",
       "Colorful"
     ],
-    "image": "https://images.pexels.com/photos/5000000/pexels-photo-5000000.jpeg?auto=compress&cs=tinysrgb&w=480&h=480&fit=crop",
+    "image": "",
     "retailYen": 280,
     "supplierUnitCostUsd": 0.85,
     "expectedJapanToUSShippingAllocationUsd": 0.45,
@@ -953,7 +953,7 @@
       "Sparkle",
       "Glow"
     ],
-    "image": "https://images.pexels.com/photos/6000000/pexels-photo-6000000.jpeg?auto=compress&cs=tinysrgb&w=480&h=480&fit=crop",
+    "image": "",
     "retailYen": 1200,
     "supplierUnitCostUsd": 0.85,
     "expectedJapanToUSShippingAllocationUsd": 0.45,
@@ -968,7 +968,7 @@
       "Cute",
       "Glow"
     ],
-    "image": "https://images.pexels.com/photos/8000000/pexels-photo-8000000.jpeg?auto=compress&cs=tinysrgb&w=480&h=480&fit=crop",
+    "image": "",
     "retailYen": 540,
     "supplierUnitCostUsd": 0.85,
     "expectedJapanToUSShippingAllocationUsd": 0.45,
@@ -983,7 +983,7 @@
       "Cute",
       "Pastel"
     ],
-    "image": "https://images.pexels.com/photos/9000000/pexels-photo-9000000.jpeg?auto=compress&cs=tinysrgb&w=480&h=480&fit=crop",
+    "image": "",
     "retailYen": 680,
     "supplierUnitCostUsd": 0.85,
     "expectedJapanToUSShippingAllocationUsd": 0.45,
@@ -998,7 +998,7 @@
       "Cute",
       "Sparkle"
     ],
-    "image": "https://images.pexels.com/photos/1128678/pexels-photo-1128678.jpeg?auto=compress&cs=tinysrgb&w=480&h=480&fit=crop",
+    "image": "",
     "retailYen": 520,
     "supplierUnitCostUsd": 0.85,
     "expectedJapanToUSShippingAllocationUsd": 0.45,
@@ -1013,7 +1013,7 @@
       "Cute",
       "Colorful"
     ],
-    "image": "https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg?auto=compress&cs=tinysrgb&w=480&h=480&fit=crop",
+    "image": "",
     "retailYen": 310,
     "supplierUnitCostUsd": 0.85,
     "expectedJapanToUSShippingAllocationUsd": 0.45,
@@ -1028,7 +1028,7 @@
       "Sparkle",
       "Cute"
     ],
-    "image": "https://images.pexels.com/photos/1646314/pexels-photo-1646314.jpeg?auto=compress&cs=tinysrgb&w=480&h=480&fit=crop",
+    "image": "",
     "retailYen": 290,
     "supplierUnitCostUsd": 0.85,
     "expectedJapanToUSShippingAllocationUsd": 0.45,
@@ -1043,7 +1043,7 @@
       "Cute",
       "Glow"
     ],
-    "image": "https://images.pexels.com/photos/205961/pexels-photo-205961.jpeg?auto=compress&cs=tinysrgb&w=480&h=480&fit=crop",
+    "image": "",
     "retailYen": 380,
     "supplierUnitCostUsd": 0.85,
     "expectedJapanToUSShippingAllocationUsd": 0.45,
