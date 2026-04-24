@@ -1,0 +1,93 @@
+[
+  {
+    "id": "snack_gummy_1",
+    "title": "JP Fruit Gummies (Assorted)",
+    "category": "Snacks",
+    "vibe": ["Sweet", "Colorful"],
+    "image": "./assets/ai-placeholders/snack_gummy_1.svg",
+    "supplierUnitCostUsd": 0.65,
+    "expectedJapanToUSShippingAllocationUsd": 0.35,
+    "handlingAllowanceUsd": 0.15
+  },
+  {
+    "id": "snack_ricecracker_1",
+    "title": "Arare Rice Crackers (Mini)",
+    "category": "Snacks",
+    "vibe": ["Savory", "Crunchy"],
+    "image": "./assets/ai-placeholders/snack_ricecracker_1.svg",
+    "supplierUnitCostUsd": 0.8,
+    "expectedJapanToUSShippingAllocationUsd": 0.4,
+    "handlingAllowanceUsd": 0.2
+  },
+  {
+    "id": "beauty_sheetmask_1",
+    "title": "Hydrating Sheet Mask",
+    "category": "Beauty",
+    "vibe": ["Skincare", "Glow"],
+    "image": "./assets/ai-placeholders/beauty_sheetmask_1.svg",
+    "supplierUnitCostUsd": 1.0,
+    "expectedJapanToUSShippingAllocationUsd": 0.55,
+    "handlingAllowanceUsd": 0.25
+  },
+  {
+    "id": "beauty_hairoil_1",
+    "title": "Silky Hair Oil (Travel)",
+    "category": "Beauty",
+    "vibe": ["Hair", "Glossy"],
+    "image": "./assets/ai-placeholders/beauty_hairoil_1.svg",
+    "supplierUnitCostUsd": 2.1,
+    "expectedJapanToUSShippingAllocationUsd": 0.8,
+    "handlingAllowanceUsd": 0.35
+  },
+  {
+    "id": "kawaii_keychain_1",
+    "title": "Kawaii Character Keychain",
+    "category": "Kawaii",
+    "vibe": ["Cute", "Collectible"],
+    "image": "./assets/ai-placeholders/kawaii_keychain_1.svg",
+    "supplierUnitCostUsd": 1.4,
+    "expectedJapanToUSShippingAllocationUsd": 0.7,
+    "handlingAllowanceUsd": 0.3
+  },
+  {
+    "id": "nails_stickers_1",
+    "title": "Nail Stickers Set",
+    "category": "Nails",
+    "vibe": ["Pink", "Sparkle"],
+    "image": "./assets/ai-placeholders/nails_stickers_1.svg",
+    "supplierUnitCostUsd": 0.95,
+    "expectedJapanToUSShippingAllocationUsd": 0.45,
+    "handlingAllowanceUsd": 0.2
+  },
+  {
+    "id": "accessory_phonecharm_1",
+    "title": "Phone Charm (Pastel)",
+    "category": "Accessories",
+    "vibe": ["Pastel", "Trendy"],
+    "image": "./assets/ai-placeholders/accessory_phonecharm_1.svg",
+    "supplierUnitCostUsd": 1.6,
+    "expectedJapanToUSShippingAllocationUsd": 0.75,
+    "handlingAllowanceUsd": 0.35
+  },
+  {
+    "id": "beauty_fakeNails_1",
+    "title": "Press-On Nails (Kawaii)",
+    "category": "Nails",
+    "vibe": ["Cute", "Pop"],
+    "image": "./assets/ai-placeholders/beauty_fakeNails_1.svg",
+    "supplierUnitCostUsd": 2.0,
+    "expectedJapanToUSShippingAllocationUsd": 0.9,
+    "handlingAllowanceUsd": 0.35
+  },
+  {
+    "id": "kawaii_stickers_1",
+    "title": "Sticker Pack (Japan Vibes)",
+    "category": "Kawaii",
+    "vibe": ["Cute", "Stationery"],
+    "image": "./assets/ai-placeholders/kawaii_stickers_1.svg",
+    "supplierUnitCostUsd": 0.55,
+    "expectedJapanToUSShippingAllocationUsd": 0.25,
+    "handlingAllowanceUsd": 0.1
+  }
+]
+

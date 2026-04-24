@@ -1,0 +1,45 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "HelloKiyoBoxContentsManifest",
+  "type": "object",
+  "required": ["schemaVersion", "boxTierId", "items"],
+  "properties": {
+    "schemaVersion": { "type": "integer", "const": 1 },
+    "boxTierId": { "type": "string" },
+    "targetProfitMargin": { "type": "number", "minimum": 0, "maximum": 1 },
+    "economics": {
+      "type": "object",
+      "properties": {
+        "allowableCostUsd": { "type": "number", "minimum": 0 },
+        "estimatedCostUsd": { "type": "number", "minimum": 0 },
+        "remainingUsd": { "type": "number" }
+      },
+      "additionalProperties": true
+    },
+    "items": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["productId", "title", "category", "quantity"],
+        "properties": {
+          "productId": { "type": "string" },
+          "title": { "type": "string" },
+          "category": { "type": "string" },
+          "quantity": { "type": "integer", "minimum": 1 },
+          "costBasisUsd": { "type": "number", "minimum": 0 },
+          "source": {
+            "type": "object",
+            "properties": {
+              "url": { "type": "string" },
+              "capturedAt": { "type": "string" }
+            },
+            "additionalProperties": true
+          }
+        },
+        "additionalProperties": true
+      }
+    }
+  },
+  "additionalProperties": true
+}
+

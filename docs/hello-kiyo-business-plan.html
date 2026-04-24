@@ -1,0 +1,988 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Hello Kiyo — Business Plan (Investor Demo)</title>
+    <style>
+      @page { size: Letter; margin: 0.65in; }
+      :root{
+        --text:#17152b;
+        --muted:#5d577d;
+        --pink:#ff4fa3;
+        --royal:#2f46ff;
+        --line: rgba(23,21,43,.10);
+        --card: rgba(255,255,255,.88);
+      }
+      *{ box-sizing:border-box; }
+      body{
+        margin:0;
+        font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial, "Apple Color Emoji","Segoe UI Emoji";
+        color: var(--text);
+        background: #fff;
+      }
+      h1,h2,h3{ margin:0 0 10px 0; line-height:1.12; letter-spacing:-.02em; }
+      h1{ font-size: 30px; }
+      h2{ font-size: 18px; margin-top: 22px; }
+      h3{ font-size: 14px; margin-top: 14px; color: var(--text); }
+      p{ margin: 0 0 10px 0; color: var(--muted); line-height:1.55; font-size: 11.5px;}
+      .meta{ display:flex; align-items:flex-start; justify-content:space-between; gap:16px; margin-bottom: 14px; }
+      .tag{
+        display:inline-flex; align-items:center; gap:8px;
+        border: 1px solid var(--line);
+        border-radius: 999px;
+        padding: 7px 10px;
+        font-size: 11px;
+        background: linear-gradient(135deg, rgba(255,79,163,.12), rgba(47,70,255,.10));
+        color: var(--text);
+        font-weight: 800;
+        letter-spacing:.02em;
+      }
+      .tag span{ font-weight: 900; color: var(--pink); }
+      .rightMeta{ text-align:right; font-size:11px; color: var(--muted); line-height:1.4; }
+      .grid2{ display:grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+      .grid3{ display:grid; grid-template-columns: 1fr 1fr 1fr; gap: 12px; }
+      .card{
+        border: 1px solid var(--line);
+        border-radius: 14px;
+        padding: 12px;
+        background: var(--card);
+      }
+      ul{ margin: 0 0 0 18px; padding:0; color: var(--muted); font-size: 11.5px; line-height:1.55; }
+      li{ margin: 6px 0; }
+      .kpiGrid{ display:grid; grid-template-columns: repeat(4, 1fr); gap: 10px; margin-top: 8px;}
+      .kpi{
+        border: 1px solid var(--line);
+        border-radius: 12px;
+        padding: 10px;
+        background: #fff;
+      }
+      .kpi .v{ font-weight: 950; font-size: 14px; letter-spacing: -.02em;}
+      .kpi .l{ font-size: 10.5px; color: var(--muted); margin-top: 4px; }
+      .shots{ display:grid; grid-template-columns: 1fr; gap: 10px; margin-top: 10px; }
+      .shot{
+        border: 1px solid var(--line);
+        border-radius: 14px;
+        overflow:hidden;
+        background: #fff;
+      }
+      .shot img{ width:100%; height:auto; display:block; }
+      .shot .cap{ padding: 8px 10px; font-size: 10.8px; color: var(--muted); }
+      .table{
+        width:100%;
+        border-collapse: collapse;
+        font-size: 11px;
+        color: var(--text);
+      }
+      .table th, .table td{
+        border-bottom: 1px solid rgba(23,21,43,.10);
+        padding: 8px 6px;
+        vertical-align: top;
+      }
+      .table th{ text-align:left; font-size: 10.5px; text-transform: uppercase; letter-spacing: .06em; color: var(--muted); }
+      .note{
+        margin-top: 10px;
+        border-left: 4px solid rgba(255,79,163,.55);
+        padding: 8px 10px;
+        background: rgba(255,79,163,.06);
+        border-radius: 10px;
+        font-size: 11.2px;
+        color: var(--muted);
+      }
+      .note b{ color: var(--text); }
+      .footer{
+        margin-top: 18px;
+        font-size: 10.5px;
+        color: var(--muted);
+        display:flex;
+        justify-content:space-between;
+        gap:12px;
+        border-top: 1px solid var(--line);
+        padding-top: 10px;
+      }
+      .mono{ font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; font-size: 10.6px; }
+
+      /* Print / pagination control */
+      .pageBreak{ break-before: page; page-break-before: always; }
+      .avoidBreak{ break-inside: avoid; page-break-inside: avoid; }
+      h2,h3{ break-after: avoid; page-break-after: avoid; }
+      .toc a{ color: inherit; text-decoration: none; }
+      .toc .row{ display:flex; justify-content:space-between; gap:12px; padding: 6px 0; border-bottom: 1px dashed rgba(23,21,43,.10); font-size: 11.5px; color: var(--muted); }
+      .toc .row b{ color: var(--text); }
+      .pill{
+        display:inline-flex; align-items:center; gap:6px;
+        border:1px solid rgba(23,21,43,.10);
+        border-radius:999px;
+        padding: 5px 8px;
+        background:#fff;
+        font-size: 10.6px;
+        color: var(--muted);
+        font-weight: 800;
+        letter-spacing:.01em;
+        white-space: nowrap;
+      }
+      .pill strong{ color: var(--text); font-weight: 950; }
+      .chartCard{ border:1px solid var(--line); border-radius: 14px; padding: 10px; background:#fff; }
+      .chartTitle{ font-weight: 950; font-size: 11px; letter-spacing: .04em; text-transform: uppercase; color: var(--muted); margin-bottom: 6px; }
+      .barRow{ display:grid; grid-template-columns: 88px 1fr 56px; gap: 8px; align-items:center; margin: 7px 0; }
+      .barLabel{ font-size: 11px; color: var(--text); font-weight: 900; }
+      .barTrack{ height: 10px; border-radius: 999px; background: rgba(23,21,43,.08); overflow:hidden; }
+      .barFill{ height:100%; border-radius:999px; background: linear-gradient(90deg, rgba(255,79,163,.9), rgba(47,70,255,.85)); }
+      .barVal{ font-size: 11px; color: var(--muted); text-align:right; font-weight: 900; }
+      .mutedSmall{ font-size: 10.8px; color: var(--muted); }
+      .heatGrid{ display:grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+      .heatItem{
+        border: 1px solid rgba(23,21,43,.10);
+        border-radius: 12px;
+        padding: 10px;
+        background:#fff;
+      }
+      .heatTop{ display:flex; justify-content:space-between; gap:10px; align-items:flex-start; }
+      .heatName{ font-weight: 950; font-size: 12px; }
+      .heatPills{ display:flex; gap:6px; flex-wrap:wrap; justify-content:flex-end; }
+      .sev{ background: rgba(255,79,163,.10); border-color: rgba(255,79,163,.25); color: var(--text); }
+      .prob{ background: rgba(47,70,255,.10); border-color: rgba(47,70,255,.22); color: var(--text); }
+      .good{ background: rgba(42,209,201,.14); border-color: rgba(42,209,201,.22); color: var(--text); }
+    </style>
+  </head>
+  <body>
+    <div class="meta avoidBreak">
+      <div>
+        <div class="tag"><span>✿</span> Hello Kiyo — Pre‑launch business plan</div>
+        <h1 style="margin-top:10px;">A kawaii “build‑your‑box” shopping spree powered by vibes</h1>
+        <p>
+          Target: female 12–24. Offer: themed Japanese assortment boxes with no individual item pricing on the storefront.
+          Shopify (headless later) + custom frontend demo.
+        </p>
+      </div>
+      <div class="rightMeta">
+        <div><b>Version</b>: Investor demo</div>
+        <div><b>Date</b>: 2026‑04‑25</div>
+        <div><b>Site</b>: hellokiyo.com (demo)</div>
+      </div>
+    </div>
+
+    <div class="card avoidBreak">
+      <h2>1) Executive summary</h2>
+      <div class="grid2">
+        <div>
+          <p>
+            Hello Kiyo sells a playful Japanese discovery experience: customers choose a box size,
+            browse cute categories, and build a “spree” without seeing item prices. Checkout is
+            box price + shipping + optional gift wrap.
+          </p>
+          <ul>
+            <li><b>Core product</b>: curated assortment box with customizable tiers.</li>
+            <li><b>Monetization</b>: box ticket (product-only) + shipping + gift wrap add‑on.</li>
+            <li><b>Launch wedge</b>: $50 “Kiyo’s Mini” curated box (bulk buy + repeatable fulfillment).</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Key operating principles</h3>
+          <ul>
+            <li><b>No item pricing</b>: the storefront sells the experience and category vibes, not SKU unit prices.</li>
+            <li><b>Shipping separate</b>: destination + box size determines Standard/Expedited quote.</li>
+            <li><b>Inventory-free</b> (except $50 curated): customizable tiers assume near-retail procurement.</li>
+            <li><b>Teen‑girl alignment</b>: prioritize colorful, kawaii, low‑yen items first within each category.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="pageBreak"></div>
+    <div class="card toc avoidBreak">
+      <h2 style="margin-top:0;">Table of contents</h2>
+      <div class="row"><b>1) Executive summary</b><span>1</span></div>
+      <div class="row"><b>2) Product & UX</b><span>2</span></div>
+      <div class="row"><b>3) Market, customer, and positioning</b><span>3</span></div>
+      <div class="row"><b>4) Business model & unit economics</b><span>4</span></div>
+      <div class="row"><b>5) Sponsorship & brand partnerships</b><span>6</span></div>
+      <div class="row"><b>6) Go‑to‑market plan</b><span>7</span></div>
+      <div class="row"><b>7) Social media strategy</b><span>9</span></div>
+      <div class="row"><b>8) Operations plan & maturity timeline</b><span>11</span></div>
+      <div class="row"><b>9) Risks, mitigations, and compliance</b><span>13</span></div>
+      <div class="row"><b>10) Roadmap & future opportunities</b><span>15</span></div>
+      <div class="mutedSmall" style="margin-top:8px;">
+        Note: page numbers are approximate and will shift as we iterate. The goal is a crisp narrative flow (no orphan headings).
+      </div>
+    </div>
+
+    <div class="pageBreak"></div>
+    <div class="avoidBreak">
+      <h2 style="margin-top:0;">2) Product & UX</h2>
+    </div>
+    <div class="shots avoidBreak">
+      <div class="shot">
+        <img src="./assets/site-hero.png" alt="Hello Kiyo hero + collections" />
+        <div class="cap"><b>Hero + collections:</b> spree sizes, mascot, and “Explore cute collections” carousel.</div>
+      </div>
+      <div class="shot">
+        <img src="./assets/site-catalog-shipping.png" alt="Catalog + shipping module" />
+        <div class="cap"><b>Catalog + shipping:</b> defaults to Japanese Candy Party; shipping is quoted separately.</div>
+      </div>
+      <div class="shot">
+        <img src="./assets/site-disclosure.png" alt="Disclosure panel" />
+        <div class="cap"><b>Disclosure:</b> explains box-only pricing, substitutions, and shipping add‑on.</div>
+      </div>
+    </div>
+
+    <div class="pageBreak"></div>
+    <h2 style="margin-top:0;">3) Market, customer, and positioning</h2>
+    <div class="grid2">
+      <div class="card avoidBreak">
+        <h3>Who we win</h3>
+        <ul>
+          <li><b>Primary</b>: girls/young women 12–24 who love kawaii culture (Sanrio, anime, stickers, snack TikTok).</li>
+          <li><b>Secondary</b>: gift buyers (birthdays, back‑to‑school, holidays) and “Japan-curious” shoppers.</li>
+          <li><b>Psychographics</b>: novelty seeking, aesthetic-first shopping, creator-driven discovery.</li>
+        </ul>
+      </div>
+      <div class="card avoidBreak">
+        <h3>Positioning</h3>
+        <ul>
+          <li><b>Not a SKU store</b>: this is an experience-led box with category vibes.</li>
+          <li><b>Game-like UX</b>: missions/bonuses + fun visual feedback, not discounting.</li>
+          <li><b>Brand mascot</b>: “Kiyo” anchors identity and content voice.</li>
+        </ul>
+      </div>
+    </div>
+    <div class="note">
+      <b>Competitive set:</b> Japanese snack boxes, stationery subscriptions, influencer storefronts. Differentiator is
+      <b>choose-your-vibe customization</b> + a merch/sponsorship flywheel.
+    </div>
+
+    <div class="pageBreak"></div>
+    <h2 style="margin-top:0;">4) Business model & unit economics</h2>
+    <div class="grid2">
+      <div class="card avoidBreak">
+        <h3>Revenue streams</h3>
+        <ul>
+          <li><b>Box tickets</b>: $50 / $99 / $169 / $249 (product-only)</li>
+          <li><b>Shipping add‑on</b>: Standard or Expedited (destination + tier)</li>
+          <li><b>Gift wrap</b>: $10–$20 add‑on</li>
+          <li><b>Sponsorship</b>: brand-funded inserts, “featured drops,” co‑branded missions</li>
+        </ul>
+      </div>
+      <div class="card avoidBreak">
+        <h3>Core unit economics assumptions</h3>
+        <div style="display:flex; flex-wrap:wrap; gap:8px;">
+          <span class="pill"><strong>Net margin</strong> 38%</span>
+          <span class="pill"><strong>Payment</strong> 3%</span>
+          <span class="pill"><strong>Packaging</strong> $2</span>
+          <span class="pill"><strong>FX</strong> 158 ¥/$</span>
+          <span class="pill"><strong>Wholesale</strong> curated only (0.65×)</span>
+          <span class="pill"><strong>Custom</strong> inventory‑free (1.00×)</span>
+        </div>
+        <p style="margin-top:10px;">
+          These match the updated economics canvas. Shipping is charged separately and does not impact ticket margin.
+        </p>
+      </div>
+    </div>
+
+    <div class="grid2" style="margin-top:12px;">
+      <div class="chartCard avoidBreak">
+        <div class="chartTitle">Estimated items per tier (¥500 median item)</div>
+        <div id="chartItems"></div>
+        <div class="mutedSmall">Custom tiers show fewer items because procurement assumes near‑retail to stay inventory‑free.</div>
+      </div>
+      <div class="chartCard avoidBreak">
+        <div class="chartTitle">Net margin by tier (ticket only)</div>
+        <div id="chartMargin"></div>
+        <div class="mutedSmall">Target is stable net margin across tiers; shipping is separate.</div>
+      </div>
+    </div>
+
+    <h3>Box tiers (customer-facing)</h3>
+    <table class="table">
+      <thead>
+        <tr>
+          <th>Tier</th>
+          <th>Ticket</th>
+          <th>Positioning</th>
+          <th>Customization</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><b>Kiyo’s Mini</b></td>
+          <td>$50</td>
+          <td>Repeatable starter box (candy + snacks), curated by Kiyo</td>
+          <td>Locked (no adds / no swaps)</td>
+        </tr>
+        <tr>
+          <td><b>Cutie Classic</b></td>
+          <td>$99</td>
+          <td>Main conversion tier for “build your box” discovery</td>
+          <td>Customizable</td>
+        </tr>
+        <tr>
+          <td><b>Sparkle Spree</b></td>
+          <td>$169</td>
+          <td>More variety + more items, best for gifting</td>
+          <td>Customizable</td>
+        </tr>
+        <tr>
+          <td><b>Ultimate Kawaii</b></td>
+          <td>$249</td>
+          <td>Top tier for power shoppers + maximal surprise</td>
+          <td>Customizable</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h3>Shipping model (separate from ticket)</h3>
+    <div class="grid2">
+      <div class="card">
+        <h3>Customer experience</h3>
+        <ul>
+          <li><b>Two options</b>: Standard (6–12 biz days) and Expedited (3–6 biz days).</li>
+          <li><b>Estimated ranges</b>: shown in‑UI per tier + destination; charged midpoint in demo.</li>
+          <li><b>Destination selector</b>: US, Canada, UK/EU, AU/NZ, Asia, Other.</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Operational assumption (pre‑launch)</h3>
+        <p>
+          Replace range tables with real carrier quoting (DHL/JP Post/UPS) as we lock packaging and weights.
+          The current estimator is intentionally simple to validate the checkout mental model.
+        </p>
+      </div>
+    </div>
+
+    <div class="pageBreak"></div>
+    <h2 style="margin-top:0;">5) Sponsorship & brand partnerships</h2>
+    <div class="grid2">
+      <div class="card avoidBreak">
+        <h3>Why sponsors care</h3>
+        <ul>
+          <li>Direct access to a high-intent Gen‑Z kawaii audience</li>
+          <li>Sampling into an <b>unboxing moment</b> (high share rate)</li>
+          <li>Performance tracking via QR + codes + “mission unlock” attribution</li>
+        </ul>
+      </div>
+      <div class="card avoidBreak">
+        <h3>Sponsorship packages (starting point)</h3>
+        <ul>
+          <li><b>Insert</b>: flyer + QR + mission sticker pack (CPM-like)</li>
+          <li><b>Sample</b>: 1–2 sponsored items in curated tier or “bonus unlock”</li>
+          <li><b>Featured drop</b>: hero placement + collection card + creator content</li>
+          <li><b>Co‑branded box</b>: limited edition theme (e.g., “Sakura Glow”)</li>
+        </ul>
+      </div>
+    </div>
+    <table class="table" style="margin-top:10px;">
+      <thead>
+        <tr>
+          <th>Package</th>
+          <th>What you get</th>
+          <th>Measurement</th>
+          <th>Notes</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><b>Insert</b></td>
+          <td>Printed insert + QR + landing page</td>
+          <td>Scans, signups, “mission starts”</td>
+          <td>Low-friction starter package</td>
+        </tr>
+        <tr>
+          <td><b>Sample</b></td>
+          <td>Physical item sampling in box</td>
+          <td>Redemption, reorder intent survey</td>
+          <td>Best for candy/beauty minis</td>
+        </tr>
+        <tr>
+          <td><b>Featured drop</b></td>
+          <td>Hero + collection + creator activation</td>
+          <td>CTR, conversion lift, CAC offset</td>
+          <td>Requires content coordination</td>
+        </tr>
+        <tr>
+          <td><b>Co‑branded</b></td>
+          <td>Limited edition box theme</td>
+          <td>Sell-through, PR value, waitlist</td>
+          <td>Quarterly tentpole</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="pageBreak"></div>
+    <h2 style="margin-top:0;">6) Go‑to‑market (GTM) plan</h2>
+    <div class="grid2">
+      <div class="card avoidBreak">
+        <h3>Launch narrative</h3>
+        <ul>
+          <li><b>Promise</b>: “Build a kawaii box of fun Japanese finds.”</li>
+          <li><b>Hook</b>: unboxing + missions + bonus unlocks</li>
+          <li><b>Wedge</b>: $50 curated tier for repeatability + fast feedback</li>
+        </ul>
+      </div>
+      <div class="card avoidBreak">
+        <h3>Funnel (targets)</h3>
+        <ul>
+          <li><b>Top</b>: creator reach + paid social → landing</li>
+          <li><b>Mid</b>: pick tier → browse collections → add 6–12 items</li>
+          <li><b>Bottom</b>: checkout with shipping add‑on</li>
+          <li><b>Retention</b>: post‑purchase “mission” + referral code</li>
+        </ul>
+      </div>
+    </div>
+    <div class="chartCard avoidBreak" style="margin-top:12px;">
+      <div class="chartTitle">90‑day launch plan (high level)</div>
+      <table class="table">
+        <thead>
+          <tr>
+            <th>Phase</th>
+            <th>Weeks</th>
+            <th>Primary goal</th>
+            <th>Outputs</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><b>Pre‑launch</b></td>
+            <td>1–4</td>
+            <td>Waitlist + creator seeding</td>
+            <td>20–40 creator kits, 50–100 UGC clips, email capture</td>
+          </tr>
+          <tr>
+            <td><b>Launch</b></td>
+            <td>5–8</td>
+            <td>Convert $50 + $99</td>
+            <td>Weekly drops, missions, affiliate codes, retargeting</td>
+          </tr>
+          <tr>
+            <td><b>Optimize</b></td>
+            <td>9–12</td>
+            <td>Improve CAC/LTV</td>
+            <td>Landing tests, bundle themes, sponsor pilots</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="pageBreak"></div>
+    <h2 style="margin-top:0;">7) Social media plan</h2>
+    <div class="grid3">
+      <div class="card avoidBreak">
+        <h3>Content pillars</h3>
+        <ul>
+          <li><b>Unboxing ASMR</b> (satisfying packaging)</li>
+          <li><b>Snack tests</b> (reaction + ranking)</li>
+          <li><b>Kawaii crafts</b> (stationery + DIY)</li>
+          <li><b>Kiyo POV</b> (mascot voice)</li>
+        </ul>
+      </div>
+      <div class="card avoidBreak">
+        <h3>Cadence (starter)</h3>
+        <ul>
+          <li><b>TikTok</b>: 2–3 posts/week</li>
+          <li><b>IG Reels</b>: 2–3 posts/week</li>
+          <li><b>YouTube Shorts</b>: 2–3 posts/week</li>
+          <li><b>Facebook Reels</b>: 2–3 posts/week</li>
+        </ul>
+      </div>
+      <div class="card avoidBreak">
+        <h3>Creator engine</h3>
+        <ul>
+          <li>Micro-influencers (10k–150k)</li>
+          <li>Affiliate codes + free box</li>
+          <li>Sponsor-funded “drops”</li>
+          <li>UGC licensing for ads</li>
+        </ul>
+      </div>
+    </div>
+    <div class="note">
+      <b>Measurement:</b> track view-through conversions, landing CTR, add-to-box, checkout completion, and post-purchase referral.
+      Sponsors get QR attribution + “mission starts.”
+    </div>
+
+    <div class="chartCard avoidBreak" style="margin-top:12px;">
+      <div class="chartTitle">Kiyo creator income (separate from site)</div>
+      <div class="grid2">
+        <div class="avoidBreak">
+          <h3 style="margin-top:0;">Monetization streams</h3>
+          <ul>
+            <li><b>UGC (brand content)</b>: brands pay for short-form ads Kiyo produces (does not require a huge following).</li>
+            <li><b>Affiliate</b>: Amazon storefront + link-in-bio for featured items.</li>
+            <li><b>Sponsorships</b>: paid integrations once average views are consistent.</li>
+            <li><b>Usage rights</b>: add-on fee for brands to run Kiyo’s content as ads (“whitelisting”).</li>
+          </ul>
+          <div class="mutedSmall">
+            With 2–3 posts/week, the most reliable early money is UGC + affiliate; sponsorship scales later.
+          </div>
+        </div>
+        <div class="avoidBreak">
+          <h3 style="margin-top:0;">Income scenarios (creator-only)</h3>
+          <table class="table">
+            <thead>
+              <tr><th>Scenario</th><th>Monthly</th><th>Driver</th></tr>
+            </thead>
+            <tbody>
+              <tr><td><b>Conservative</b></td><td>$600–$1,100</td><td>1 UGC + light affiliate</td></tr>
+              <tr><td><b>Base</b></td><td>$2,400–$4,900</td><td>2–3 UGC + some affiliate + 1 sponsor/mo</td></tr>
+              <tr><td><b>Aggressive</b></td><td>$7,800–$17,200</td><td>4–6 UGC + strong affiliate + 1–2 sponsors/mo</td></tr>
+            </tbody>
+          </table>
+          <div class="mutedSmall">
+            These ranges depend on average views (not follower count). UGC rates rise with proof + repeatable performance.
+          </div>
+        </div>
+      </div>
+      <div class="note" style="margin-top:10px;">
+        <b>Operational advantage:</b> the box business produces constant “unboxing” content. The creator business
+        can become a separate P&L (media + licensing) that also reduces ecommerce CAC.
+      </div>
+    </div>
+
+    <div class="pageBreak"></div>
+    <h2 style="margin-top:0;">8) Operations plan & maturity timeline</h2>
+    <div class="grid2">
+      <div class="card avoidBreak">
+        <h3>Phase 1 (0–3 months): curated‑first</h3>
+        <ul>
+          <li>Stock only the $50 curated manifest</li>
+          <li>Lock packaging + weight bands</li>
+          <li>Validate shipping estimator with real carrier rates</li>
+        </ul>
+      </div>
+      <div class="card avoidBreak">
+        <h3>Phase 2 (3–9 months): customize + substitute</h3>
+        <ul>
+          <li>Codify substitution rules by vibe/subcategory</li>
+          <li>Introduce limited “drops” for scarcity</li>
+          <li>Begin wholesale relationships for repeat SKUs</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="pageBreak"></div>
+    <h2 style="margin-top:0;">9) Risks, mitigations, and compliance</h2>
+    <div class="heatGrid avoidBreak" style="margin-bottom:10px;">
+      <div class="heatItem">
+        <div class="heatTop">
+          <div class="heatName">CAC volatility (paid social)</div>
+          <div class="heatPills">
+            <span class="pill sev"><strong>Severity</strong> High</span>
+            <span class="pill prob"><strong>Likelihood</strong> Med</span>
+          </div>
+        </div>
+        <div class="mutedSmall" style="margin-top:6px;">
+          Mitigation: creator-first acquisition, UGC licensing, retargeting guardrails, and sponsor-funded drops.
+        </div>
+      </div>
+      <div class="heatItem">
+        <div class="heatTop">
+          <div class="heatName">Food import / compliance</div>
+          <div class="heatPills">
+            <span class="pill sev"><strong>Severity</strong> High</span>
+            <span class="pill prob"><strong>Likelihood</strong> Low–Med</span>
+          </div>
+        </div>
+        <div class="mutedSmall" style="margin-top:6px;">
+          Mitigation: source via compliant exporters, maintain ingredient lists, avoid restricted items, documented SOPs.
+        </div>
+      </div>
+      <div class="heatItem">
+        <div class="heatTop">
+          <div class="heatName">“No item pricing” trust gap</div>
+          <div class="heatPills">
+            <span class="pill sev"><strong>Severity</strong> Med</span>
+            <span class="pill prob"><strong>Likelihood</strong> Med</span>
+          </div>
+        </div>
+        <div class="mutedSmall" style="margin-top:6px;">
+          Mitigation: prominent disclosure, preview examples, substitution promise, and a generous support posture.
+        </div>
+      </div>
+      <div class="heatItem">
+        <div class="heatTop">
+          <div class="heatName">Shipping variance / chargebacks</div>
+          <div class="heatPills">
+            <span class="pill sev"><strong>Severity</strong> Med</span>
+            <span class="pill prob"><strong>Likelihood</strong> Med</span>
+          </div>
+        </div>
+        <div class="mutedSmall" style="margin-top:6px;">
+          Mitigation: quote by destination+tier, lock packaging weights, integrate carrier rates, buffer ranges.
+        </div>
+      </div>
+    </div>
+    <table class="table">
+      <thead>
+        <tr>
+          <th>Risk</th>
+          <th>Impact</th>
+          <th>Mitigation</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><b>“No item pricing” confusion</b></td>
+          <td>Trust / refunds</td>
+          <td>Clear disclosures, preview examples, consistent “vibe” promise, easy support.</td>
+        </tr>
+        <tr>
+          <td><b>International shipping variance</b></td>
+          <td>Margin leakage</td>
+          <td>Quote by destination + tier; lock packaging; integrate carrier rates; buffer ranges.</td>
+        </tr>
+        <tr>
+          <td><b>Food import/compliance</b></td>
+          <td>Delays / seizures</td>
+          <td>Source from compliant exporters; maintain ingredient lists; avoid restricted items; documented SOP.</td>
+        </tr>
+        <tr>
+          <td><b>Inventory‑free custom tiers</b></td>
+          <td>Stockouts</td>
+          <td>Substitution logic, supplier redundancy, “drops” limits, and gradual wholesale for repeat items.</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="pageBreak"></div>
+    <h2 style="margin-top:0;">10) Roadmap & future opportunities</h2>
+    <div class="grid2">
+      <div class="card avoidBreak">
+        <h3>Opportunities</h3>
+        <ul>
+          <li>Co‑branded boxes with anime/game IP</li>
+          <li>Seasonal tentpoles (Sakura, Summer Matsuri, Halloween)</li>
+          <li>Membership perks (early drops, rare bonus unlocks)</li>
+          <li>Retail pop-ups + collab events</li>
+        </ul>
+      </div>
+      <div class="card avoidBreak">
+        <h3>Product roadmap</h3>
+        <ul>
+          <li>Carrier quoting integration</li>
+          <li>Real “missions” reward inventory + sponsor funding</li>
+          <li>Headless Shopify checkout + subscriptions</li>
+          <li>Referral program + influencer portal</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="pageBreak"></div>
+    <h2 style="margin-top:0;">Appendix: Economics highlights (from canvas)</h2>
+    <div class="card">
+      <div class="kpiGrid">
+        <div class="kpi"><div class="v">38%</div><div class="l">Net margin target (ticket only)</div></div>
+        <div class="kpi"><div class="v">3%</div><div class="l">Payment processing reserve</div></div>
+        <div class="kpi"><div class="v">$2</div><div class="l">Packaging absorbed per box</div></div>
+        <div class="kpi"><div class="v">158</div><div class="l">Unified FX rate (¥/$)</div></div>
+      </div>
+      <div class="note">
+        <b>Key point:</b> “No item pricing” is feasible when the customer purchases an <b>assortment experience</b>
+        (curated box) rather than a cart of individually priced SKUs. You must disclose variability/substitutions,
+        avoid guaranteed “retail value” claims unless provable, and maintain tight internal cost controls per tier.
+      </div>
+      <p style="margin-top:10px;">
+        Internal cost model in the demo:
+      </p>
+      <div class="mono">
+        product_budget = ticket × (1 − netMargin − paymentPct) − packaging<br/>
+        curated_unit_cost ≈ (retail_yen × 0.65) / 158 + $0.25 inbound handling<br/>
+        custom_unit_cost ≈ (retail_yen × 1.00) / 158 (inventory‑free procurement)
+      </div>
+    </div>
+
+    <div class="pageBreak"></div>
+    <h2 style="margin-top:0;">Appendix: MBA‑level growth model (targets & sensitivities)</h2>
+    <div class="note">
+      <b>Launch scope update:</b> US-only for launch. Add subscription as the primary growth lever once
+      fulfillment and compliance are stable. Family-operated (no wages); profits accrue to the family except for
+      investor payback per the plan below.
+    </div>
+
+    <div class="pageBreak"></div>
+    <h2 style="margin-top:0;">Appendix: Startup costs, operating costs, and investor payback</h2>
+    <div class="grid2">
+      <div class="card avoidBreak">
+        <h3>Use of funds (initial $10,000)</h3>
+        <table class="table">
+          <thead><tr><th>Line item</th><th>Budget</th><th>Notes</th></tr></thead>
+          <tbody>
+            <tr><td><b>Business formation + compliance</b></td><td>$1,200</td><td>LLC, EIN, permits, basic legal templates</td></tr>
+            <tr><td><b>Brand + packaging setup</b></td><td>$1,800</td><td>Stickers, inserts, tissue, wrap materials, test runs</td></tr>
+            <tr><td><b>Initial curated inventory (Kiyo’s Mini)</b></td><td>$3,500</td><td>Repeatable SKU mix to fulfill early orders</td></tr>
+            <tr><td><b>Shipping materials + scale</b></td><td>$600</td><td>Boxes, mailers, label printer, scale, tape</td></tr>
+            <tr><td><b>Hosting + tooling (12 months)</b></td><td>$900</td><td>Domain, email, storage, monitoring, optional Shopify fees</td></tr>
+            <tr><td><b>Creator seeding + UGC</b></td><td>$1,500</td><td>10–20 seeding kits + content licensing</td></tr>
+            <tr><td><b>Paid test budget</b></td><td>$500</td><td>Small paid social tests (creative validation)</td></tr>
+          </tbody>
+        </table>
+        <div class="mutedSmall">Budget ranges can shift; the key is validating CAC + retention quickly.</div>
+      </div>
+      <div class="card avoidBreak">
+        <h3>Operating cost model (monthly, US-only)</h3>
+        <table class="table">
+          <thead><tr><th>Category</th><th>Monthly</th><th>Notes</th></tr></thead>
+          <tbody>
+            <tr><td><b>Software + hosting</b></td><td>$75–$200</td><td>Domain/email, analytics, hosting, shipping tools</td></tr>
+            <tr><td><b>Packaging replenishment</b></td><td>$0.60–$1.20 / order</td><td>Tissue, sticker, insert; separate from product budget</td></tr>
+            <tr><td><b>Customer support</b></td><td>$0 (family)</td><td>Time cost still exists; plan for 0.5–1.0 hr/day at 10 orders/day</td></tr>
+            <tr><td><b>Pick/pack labor</b></td><td>$0 (family)</td><td>Plan capacity: 10–20 orders/day with 2 people for 2–3 hours</td></tr>
+            <tr><td><b>Marketing</b></td><td>$500–$3,000</td><td>Creator seeding + paid tests; scale only when CAC works</td></tr>
+            <tr><td><b>Loss/return reserve</b></td><td>1–3% of revenue</td><td>Damage, replacements, goodwill</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="grid2" style="margin-top:12px;">
+      <div class="card avoidBreak">
+        <h3>Subscription plan (US-only, after stability)</h3>
+        <ul>
+          <li><b>Offer</b>: monthly “Kawaii Spree” subscription (default $99), with seasonal themed drops.</li>
+          <li><b>Retention levers</b>: missions + bonus unlocks, “rare” monthly insert, referral reward.</li>
+          <li><b>Inventory approach</b>: curated tier has stocked SKUs; customizable tiers use substitute rules + small batch sourcing.</li>
+        </ul>
+        <table class="table">
+          <thead><tr><th>Metric</th><th>Conservative</th><th>Target</th><th>Great</th></tr></thead>
+          <tbody>
+            <tr><td><b>Monthly churn</b></td><td>10%</td><td>6–8%</td><td>4–5%</td></tr>
+            <tr><td><b>Avg lifetime (months)</b></td><td>10</td><td>13–16</td><td>18–24</td></tr>
+            <tr><td><b>Payback window</b></td><td>2–3 months</td><td>1–2 months</td><td>&lt;1 month</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="card avoidBreak">
+        <h3>Investor request: $10K + payback plan</h3>
+        <p>
+          Structure designed for a family-operated business: no wages; cashflow primarily used for
+          inventory rotation, packaging, and growth. Investor is repaid before owner distributions.
+        </p>
+        <table class="table">
+          <thead><tr><th>Option</th><th>Mechanic</th><th>Payback target</th><th>Notes</th></tr></thead>
+          <tbody>
+            <tr>
+              <td><b>Revenue share note</b></td>
+              <td>5% of gross ticket revenue until 1.5× repaid</td>
+              <td>$15K total</td>
+              <td>Simple, aligns with top-line growth</td>
+            </tr>
+            <tr>
+              <td><b>Profit share note</b></td>
+              <td>20% of monthly net profit until 2× repaid</td>
+              <td>$20K total</td>
+              <td>Protects business in slow months</td>
+            </tr>
+            <tr>
+              <td><b>Hybrid</b></td>
+              <td>3% revenue share until $10K repaid, then 10% profit share to 1.75×</td>
+              <td>$17.5K total</td>
+              <td>Balances speed + downside protection</td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="mutedSmall">
+          Exact terms to be finalized; this plan demonstrates repayment feasibility under realistic order volumes.
+        </div>
+      </div>
+    </div>
+
+    <div class="chartCard avoidBreak" style="margin-top:12px;">
+      <div class="chartTitle">Investor payback scenarios (illustrative)</div>
+      <table class="table">
+        <thead><tr><th>Scenario</th><th>Orders/month</th><th>Avg ticket</th><th>Revenue share</th><th>Months to repay $15K</th></tr></thead>
+        <tbody id="paybackTable"></tbody>
+      </table>
+      <div class="mutedSmall">
+        Assumes a 5% revenue share on ticket revenue only (shipping pass-through excluded).
+      </div>
+    </div>
+    <div class="grid2">
+      <div class="card avoidBreak">
+        <h3>$250K/year feasibility (orders)</h3>
+        <p>
+          $250K/year ≈ $20.8K/month. Orders/month depends on ticket mix (shipping is pass-through).
+        </p>
+        <table class="table">
+          <thead>
+            <tr><th>Avg ticket</th><th>Orders/month</th><th>Orders/day</th></tr>
+          </thead>
+          <tbody id="ordersTable"></tbody>
+        </table>
+      </div>
+      <div class="card avoidBreak">
+        <h3>CAC guardrails (back-of-napkin)</h3>
+        <p>
+          Contribution margin ≈ ticket × 38%. To stay healthy after overhead, the blended CAC should generally be
+          below ~40–55% of contribution on the dominant tier.
+        </p>
+        <table class="table">
+          <thead>
+            <tr><th>Tier</th><th>Ticket</th><th>Contribution (38%)</th><th>Target CAC range</th></tr>
+          </thead>
+          <tbody id="cacTable"></tbody>
+        </table>
+        <div class="mutedSmall">
+          Sponsor revenue can effectively subsidize CAC by funding inserts/drops.
+        </div>
+      </div>
+    </div>
+
+    <div class="chartCard avoidBreak" style="margin-top:12px;">
+      <div class="chartTitle">Sensitivity: CAC vs conversion rate (illustrative)</div>
+      <div class="mutedSmall">
+        Use this to sanity-check paid social: small changes in landing→checkout conversion swing allowable CAC.
+        (Replace with real funnel telemetry post-launch.)
+      </div>
+      <table class="table" style="margin-top:8px;">
+        <thead>
+          <tr>
+            <th>Landing → checkout</th>
+            <th>Allowable CAC (if $99 tier dominates)</th>
+            <th>Notes</th>
+          </tr>
+        </thead>
+        <tbody id="sensTable"></tbody>
+      </table>
+    </div>
+
+    <h2>6) Ops plan (inventory‑light launch)</h2>
+    <div class="grid2">
+      <div class="card">
+        <h3>Phase 1 (launch): curated‑first</h3>
+        <ul>
+          <li>Stock only the $50 curated manifest (repeatable picks)</li>
+          <li>Pre‑pack box components: tissue, wrap, inserts, stickers</li>
+          <li>Standardize weight bands and lock carrier rates</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Phase 2 (scale): customizable tiers</h3>
+        <ul>
+          <li>Maintain “inventory‑free” posture via small-batch sourcing and fast replenishment</li>
+          <li>Introduce substitution rules by vibe + subcategory</li>
+          <li>Gradually add wholesale relationships for top recurring SKUs</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer">
+      <div>© Hello Kiyo (investor demo)</div>
+      <div class="mono">Generated from local demo site screenshots</div>
+    </div>
+
+    <script>
+      // Chart data pulled directly from the economics canvas constants.
+      // Representative item: ¥500 retail, LIVE_FX=159.4, PROPOSED.fx=158, packaging=$2, payment=3%, net=38%.
+      const tiers = [
+        { label: "$50 Kiyo’s Mini", price: 50, curated: true },
+        { label: "$99 Cutie Classic", price: 99, curated: false },
+        { label: "$169 Sparkle Spree", price: 169, curated: false },
+        { label: "$249 Ultimate Kawaii", price: 249, curated: false },
+      ];
+      const PROPOSED = {
+        fx: 158,
+        curatedWholesaleFactor: 0.65,
+        customProcurementFactor: 1.0,
+        curatedInboundPerItemUsd: 0.25,
+        packagingUsd: 2.0,
+        paymentPct: 0.03,
+        netMarginTarget: 0.38,
+      };
+      const AVG_YEN = 500;
+      function proposedItemCostUsd(tier){
+        if (tier.curated){
+          return (AVG_YEN * PROPOSED.curatedWholesaleFactor) / PROPOSED.fx + PROPOSED.curatedInboundPerItemUsd;
+        }
+        return (AVG_YEN * PROPOSED.customProcurementFactor) / PROPOSED.fx;
+      }
+      function proposedBudgetUsd(price){
+        return Math.max(0, price * (1 - PROPOSED.netMarginTarget - PROPOSED.paymentPct) - PROPOSED.packagingUsd);
+      }
+      const model = tiers.map(t => {
+        const itemCost = proposedItemCostUsd(t);
+        const budget = proposedBudgetUsd(t.price);
+        const items = Math.floor(budget / itemCost);
+        const variable = items * itemCost;
+        const payments = t.price * PROPOSED.paymentPct;
+        const netUsd = t.price - variable - PROPOSED.packagingUsd - payments;
+        const netPct = netUsd / t.price;
+        return { ...t, itemCost, budget, items, netPct };
+      });
+
+      function renderBars(el, rows, maxVal, fmt){
+        el.innerHTML = rows.map(r => {
+          const w = Math.max(0, Math.min(100, (r.val / maxVal) * 100));
+          return \`
+            <div class="barRow">
+              <div class="barLabel">\${r.label}</div>
+              <div class="barTrack"><div class="barFill" style="width:\${w}%"></div></div>
+              <div class="barVal">\${fmt(r.val)}</div>
+            </div>\`;
+        }).join("");
+      }
+
+      const itemsRows = model.map(m => ({ label: m.label, val: m.items }));
+      const maxItems = Math.max(...itemsRows.map(r => r.val), 1);
+      renderBars(document.getElementById("chartItems"), itemsRows, maxItems, v => String(v));
+
+      const marginRows = model.map(m => ({ label: m.label, val: Math.round(m.netPct * 1000) / 10 }));
+      renderBars(document.getElementById("chartMargin"), marginRows, 45, v => v.toFixed(1) + "%");
+
+      // Orders table ($250K/yr)
+      const annual = 250000;
+      const monthly = annual / 12;
+      const aovs = [75, 99, 120, 150];
+      const ordersBody = document.getElementById("ordersTable");
+      ordersBody.innerHTML = aovs.map(aov => {
+        const perMonth = Math.round(monthly / aov);
+        const perDay = (perMonth / 30).toFixed(1);
+        return `<tr><td><b>$${aov}</b></td><td>${perMonth}</td><td>${perDay}</td></tr>`;
+      }).join("");
+
+      // CAC table
+      const tiersForCac = [
+        { name: "Kiyo’s Mini", price: 50 },
+        { name: "Cutie Classic", price: 99 },
+        { name: "Sparkle Spree", price: 169 },
+        { name: "Ultimate Kawaii", price: 249 },
+      ];
+      const cacBody = document.getElementById("cacTable");
+      cacBody.innerHTML = tiersForCac.map(t => {
+        const contrib = t.price * 0.38;
+        const lo = contrib * 0.40;
+        const hi = contrib * 0.55;
+        return `<tr><td><b>${t.name}</b></td><td>$${t.price}</td><td>$${contrib.toFixed(2)}</td><td>$${lo.toFixed(0)}–$${hi.toFixed(0)}</td></tr>`;
+      }).join("");
+
+      // Sensitivity (illustrative) for $99: allowable CAC = contribution × conversion multiplier proxy
+      // We tie it to conversion as: allowable CAC = contrib × (conv / 3.0%) where 3% is a baseline.
+      const baselineConv = 0.03;
+      const convs = [0.015, 0.02, 0.03, 0.04, 0.05];
+      const contrib99 = 99 * 0.38;
+      const sensBody = document.getElementById("sensTable");
+      sensBody.innerHTML = convs.map(c => {
+        const mult = c / baselineConv;
+        const allowed = contrib99 * 0.50 * mult; // assume we spend ~50% of contribution on CAC at baseline
+        const label = (c * 100).toFixed(1) + "%";
+        const note = c < 0.02 ? "Paid social likely unprofitable without sponsors/retention." :
+                     c < 0.03 ? "Needs strong creative + landing + retargeting." :
+                     c < 0.045 ? "Healthy with disciplined targeting." :
+                     "Excellent—scale until CAC rises.";
+        return `<tr><td><b>${label}</b></td><td>$${allowed.toFixed(0)}</td><td>${note}</td></tr>`;
+      }).join("");
+
+      // Payback scenarios for $10K at 1.5x via 5% revenue share
+      const paybackBody = document.getElementById("paybackTable");
+      const scenarios = [
+        { name: "Conservative", orders: 120, aov: 85 },
+        { name: "Base case", orders: 210, aov: 99 },
+        { name: "Aggressive", orders: 320, aov: 110 },
+      ];
+      const targetRepay = 15000;
+      const share = 0.05;
+      paybackBody.innerHTML = scenarios.map(s => {
+        const monthlyShare = s.orders * s.aov * share;
+        const months = monthlyShare > 0 ? Math.ceil(targetRepay / monthlyShare) : "—";
+        return `<tr><td><b>${s.name}</b></td><td>${s.orders}</td><td>$${s.aov}</td><td>$${monthlyShare.toFixed(0)}/mo</td><td>${months}</td></tr>`;
+      }).join("");
+    </script>
+  </body>
+</html>
+

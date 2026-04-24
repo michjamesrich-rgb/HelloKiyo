@@ -1,0 +1,432 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>HelloKiyo Investor Pitch and Business Plan</title>
+    <style>
+      :root {
+        --ink: #14213d;
+        --muted: #51607a;
+        --line: #d9e0ea;
+        --pink: #ff4fa3;
+        --teal: #2ad1c9;
+        --blue: #2f46ff;
+        --paper: #ffffff;
+        --wash: #f7f8fb;
+      }
+      * { box-sizing: border-box; }
+      body {
+        margin: 0;
+        font-family: Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+        color: var(--ink);
+        background: linear-gradient(180deg, #fff, #f7f8fb);
+      }
+      .page {
+        width: 8.5in;
+        margin: 0 auto;
+        padding: 0.55in 0.6in 0.7in 0.6in;
+        background: var(--paper);
+      }
+      .cover {
+        border: 1px solid var(--line);
+        border-radius: 22px;
+        padding: 28px;
+        background:
+          radial-gradient(420px 180px at 0% 0%, rgba(255,79,163,.14), transparent 55%),
+          radial-gradient(360px 180px at 100% 0%, rgba(42,209,201,.12), transparent 55%),
+          linear-gradient(180deg, rgba(255,255,255,.96), rgba(250,251,255,.92));
+      }
+      .eyebrow {
+        display: inline-block;
+        padding: 6px 10px;
+        border: 1px solid var(--line);
+        border-radius: 999px;
+        font-size: 11px;
+        font-weight: 800;
+        letter-spacing: .08em;
+        text-transform: uppercase;
+        color: var(--muted);
+        background: rgba(255,255,255,.88);
+      }
+      h1 {
+        margin: 14px 0 10px;
+        font-size: 36px;
+        line-height: 1.02;
+        letter-spacing: -.04em;
+      }
+      h2 {
+        margin: 28px 0 10px;
+        font-size: 20px;
+        line-height: 1.1;
+      }
+      p, li {
+        color: var(--ink);
+        font-size: 14px;
+        line-height: 1.6;
+      }
+      .sub {
+        color: var(--muted);
+        font-size: 15px;
+        max-width: 62ch;
+      }
+      .founders {
+        margin-top: 10px;
+        color: var(--muted);
+        font-size: 13px;
+      }
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 12px;
+        margin-top: 16px;
+      }
+      .stat {
+        border: 1px solid var(--line);
+        border-radius: 16px;
+        padding: 12px;
+        background: #fff;
+      }
+      .stat .label {
+        font-size: 11px;
+        color: var(--muted);
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: .06em;
+      }
+      .stat .value {
+        margin-top: 6px;
+        font-size: 22px;
+        font-weight: 900;
+      }
+      .callout {
+        margin-top: 18px;
+        border-left: 4px solid var(--teal);
+        background: #f6fcfb;
+        padding: 14px 16px;
+        border-radius: 0 14px 14px 0;
+      }
+      .section {
+        margin-top: 18px;
+        padding-top: 6px;
+      }
+      .two-col {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 18px;
+      }
+      .card {
+        border: 1px solid var(--line);
+        border-radius: 18px;
+        padding: 16px;
+        background: #fff;
+      }
+      .pills {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        margin-top: 8px;
+      }
+      .pill {
+        border: 1px solid var(--line);
+        border-radius: 999px;
+        padding: 7px 10px;
+        font-size: 12px;
+        font-weight: 700;
+        background: #fff;
+      }
+      .screenshot {
+        width: 100%;
+        border: 1px solid var(--line);
+        border-radius: 18px;
+        display: block;
+        margin-top: 10px;
+      }
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 8px;
+        font-size: 13px;
+      }
+      th, td {
+        border-bottom: 1px solid var(--line);
+        text-align: left;
+        padding: 10px 8px;
+        vertical-align: top;
+      }
+      th {
+        font-size: 11px;
+        text-transform: uppercase;
+        letter-spacing: .06em;
+        color: var(--muted);
+      }
+      .footer-note {
+        margin-top: 26px;
+        color: var(--muted);
+        font-size: 12px;
+      }
+      .page-break { page-break-before: always; }
+      @media print {
+        body { background: #fff; }
+        .page { width: auto; margin: 0; }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="page">
+      <section class="cover">
+        <div class="eyebrow">Teen-friendly investor pitch</div>
+        <h1>HelloKiyo investor pitch and business plan</h1>
+        <p class="sub">
+          This document explains the business in plain English so it is easy to understand. The goal is
+          to show what HelloKiyo is, how it makes money, why shoppers may love it, and what it needs in
+          order to grow.
+        </p>
+        <div class="founders">Founders: Michael Richardson and Kiyo Richardson</div>
+
+        <div class="grid">
+          <div class="stat"><div class="label">Customer</div><div class="value">Girls 12-24</div></div>
+          <div class="stat"><div class="label">Price range</div><div class="value">$50-$249</div></div>
+          <div class="stat"><div class="label">Month 1 goal</div><div class="value">$5k profit</div></div>
+          <div class="stat"><div class="label">Year 1 goal</div><div class="value">$250k+</div></div>
+        </div>
+
+        <div class="callout">
+          <strong>The short version:</strong> HelloKiyo is an ecommerce brand where customers build a
+          cute Japan-inspired box of products. Instead of shopping with a normal cart, they fill a box,
+          unlock bonuses, and enjoy a game-like experience.
+        </div>
+      </section>
+
+      <section class="section">
+        <h2>1. What is HelloKiyo?</h2>
+        <p>
+          HelloKiyo is a brand that sells fixed-price boxes filled with Japanese snacks, beauty products,
+          nails, accessories, and other cute items. The customer does not shop by comparing individual
+          prices. Instead, she chooses a box size, fills it with items she likes, and watches the box
+          fill up visually.
+        </p>
+        <p>
+          This matters because normal ecommerce feels practical, but HelloKiyo is supposed to feel fun,
+          exciting, and shareable. It should feel more like a shopping game or a “treat yourself” moment
+          than a normal checkout flow.
+        </p>
+        <img class="screenshot" src="../mockups/screenshots/00-desktop-hero-pitch.png" alt="HelloKiyo pitch mockup" />
+      </section>
+
+      <section class="section">
+        <div class="two-col">
+          <div>
+            <h2>2. Why this is different</h2>
+            <p>
+              Most stores ask the customer to do work: search, compare prices, think about shipping, and
+              build a cart. HelloKiyo turns that into a playful experience.
+            </p>
+            <ul>
+              <li>The customer sees a box fill up, not a spreadsheet-like cart.</li>
+              <li>There can be missions or combo goals that unlock bonus items.</li>
+              <li>The site can offer “AI pick for me” curation for a fun shortcut.</li>
+              <li>The final result feels giftable, cute, and social-media friendly.</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h2 style="margin-top:0">3. How it works</h2>
+            <ol style="padding-left:18px; margin:0;">
+              <li>Customer picks a box tier: $50 (Kiyo's Mini), $99 (Cutie Classic), $169 (Sparkle Spree), or $249 (Ultimate Kawaii).</li>
+              <li>Customer adds items she likes.</li>
+              <li>The site shows the box filling up visually.</li>
+              <li>The site estimates how many more items can fit.</li>
+              <li>The customer checks out one box, not a list of item prices.</li>
+            </ol>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="two-col">
+          <div>
+            <h2>4. Who is this for?</h2>
+            <p>
+              The first target customer is a girl or young woman who likes cute design, Japanese culture,
+              snacks, beauty, nails, accessories, and “haul” or “unboxing” style content online.
+            </p>
+            <p>
+              She is not only buying products. She is buying a feeling: “I made this,” “this is cute,”
+              “this feels like a shopping spree,” and “I want to show this to my friends.”
+            </p>
+            <div class="pills">
+              <span class="pill">Snacks</span>
+              <span class="pill">Beauty</span>
+              <span class="pill">Nails</span>
+              <span class="pill">Phone charms</span>
+              <span class="pill">Kawaii accessories</span>
+              <span class="pill">Sticker packs</span>
+            </div>
+          </div>
+          <div>
+            <h2>5. Why customers may love it</h2>
+            <p>
+              Good ecommerce usually solves a practical problem. Great brands also create excitement.
+              HelloKiyo can stand out because it mixes shopping, surprise, curation, and social-friendly
+              presentation.
+            </p>
+            <p>
+              If the experience is strong enough, the customer may come back not only for products, but
+              for the fun of building the next box.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <div class="page-break"></div>
+
+      <section class="section">
+        <h2>6. How the business makes money</h2>
+        <p>
+          The business sells a fixed-price box. Inside the company, there is a cost ceiling that decides
+          how much product cost and shipping cost can fit inside that box while still protecting profit.
+        </p>
+        <div class="callout">
+          <strong>Simple example:</strong> if a $99 box targets roughly 45% gross profit, product cost and
+          shipping cost together should stay below roughly 55% of the sale. That leaves room for packaging,
+          fees, operations, and profit.
+        </div>
+
+        <div class="two-col">
+          <div class="card">
+            <h2 style="margin-top:0">What the customer sees</h2>
+            <ul>
+              <li>A fixed box price</li>
+              <li>A fun box-filling visual</li>
+              <li>Optional faster shipping</li>
+              <li>A bonus or mission system</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h2 style="margin-top:0">What the business tracks</h2>
+            <ul>
+              <li>Supplier product cost</li>
+              <li>Japan-to-US shipping cost</li>
+              <li>Packaging cost</li>
+              <li>Payment fees</li>
+              <li>Gross profit by box tier</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2>7. Go-to-market plan</h2>
+        <table>
+          <thead>
+            <tr><th>Time</th><th>Main focus</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>0-30 days</td><td>Finish storefront, test first orders, collect feedback from friends and early customers.</td></tr>
+            <tr><td>30-90 days</td><td>Launch paid boxes, improve repeat purchase rate, refine product mix, improve content.</td></tr>
+            <tr><td>3-6 months</td><td>Make sourcing and fulfillment smoother, improve analytics, add more refined missions and curation.</td></tr>
+            <tr><td>6-12 months</td><td>Scale content, expand product range, and pursue sponsorships or creator partnerships.</td></tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section class="section">
+        <div class="two-col">
+          <div>
+            <h2>8. Marketing plan</h2>
+            <p>
+              Kiyo is part of the brand story, which is powerful. The marketing engine should start with
+              short-form content: unboxings, “fill a box with me,” favorite products, challenge videos,
+              and themed drops.
+            </p>
+            <p>
+              This helps in three ways:
+            </p>
+            <ul>
+              <li>It gives people a reason to discover the brand.</li>
+              <li>It makes the box experience easy to understand.</li>
+              <li>It can attract sponsors and free products later.</li>
+            </ul>
+          </div>
+          <div>
+            <h2>9. Operations plan</h2>
+            <p>
+              Shopify handles orders and payments. A simple ops layer tracks what went in each box, what
+              it actually cost, and how the order moves from review to packing to shipping.
+            </p>
+            <p>
+              Early on, this can be simple. Over time, it should become more automated so the business
+              can grow without becoming messy.
+            </p>
+            <img class="screenshot" src="../mockups/screenshots/03-desktop-ai-filled.png" alt="Filled box mockup" />
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2>10. Why this could become more than a store</h2>
+        <p>
+          HelloKiyo can become more than ecommerce if it succeeds in three connected areas:
+        </p>
+        <ul>
+          <li><strong>Product sales:</strong> profitable box purchases.</li>
+          <li><strong>Content growth:</strong> a real audience that likes the brand.</li>
+          <li><strong>Sponsorships:</strong> brands paying to be featured once the audience is large enough.</li>
+        </ul>
+        <p>
+          That matters because it creates multiple value engines instead of just “sell item, ship item,
+          repeat.”
+        </p>
+      </section>
+
+      <div class="page-break"></div>
+
+      <section class="section">
+        <h2>11. What funding would help with</h2>
+        <table>
+          <thead>
+            <tr><th>Category</th><th>Why it matters</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Inventory</td><td>Lets the business stock attractive starter products and ship faster.</td></tr>
+            <tr><td>Packaging</td><td>Makes the unboxing experience feel premium and worth sharing online.</td></tr>
+            <tr><td>Store and ops</td><td>Improves order tracking, analytics, checkout flow, and fulfillment.</td></tr>
+            <tr><td>Content and testing</td><td>Helps prove what content converts and what product mix performs best.</td></tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section class="section">
+        <h2>12. Main risks and the plan to handle them</h2>
+        <table>
+          <thead>
+            <tr><th>Risk</th><th>Plan</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Supplier prices change</td><td>Use conservative estimates and update the box math often.</td></tr>
+            <tr><td>Shipping costs move around</td><td>Default to economical shipping and keep a margin buffer.</td></tr>
+            <tr><td>Products go out of stock</td><td>Use substitution rules and maintain backups by category.</td></tr>
+            <tr><td>Shoppers get confused</td><td>Keep the interface visual, simple, and fun.</td></tr>
+            <tr><td>Growth is slower than expected</td><td>Start lean, test content quickly, and improve conversion before spending big on ads.</td></tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section class="section">
+        <h2>13. Closing idea</h2>
+        <p>
+          HelloKiyo has a strong beginner story: make shopping feel exciting, make the box experience easy
+          to understand, keep the profit math disciplined, and build a brand that can grow through content.
+        </p>
+        <p>
+          If the team proves that customers enjoy the experience and the business can ship profitably,
+          HelloKiyo can grow from a fun box concept into a real ecommerce and creator-led brand.
+        </p>
+
+        <div class="footer-note">
+          Draft v1. Written to be easy for a 15-year-old to understand first, then expandable into a more
+          technical investor deck later.
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

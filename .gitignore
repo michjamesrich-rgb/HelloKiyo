@@ -1,0 +1,35 @@
+.DS_Store
+.env
+.env.*
+
+# Node
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+
+# Local databases / artifacts
+*.db
+*.sqlite
+*.sqlite3
+
+# OS / editor
+.idea/
+.vscode/
+
+# Build / output
+dist/
+build/
+.next/
+.turbo/
+

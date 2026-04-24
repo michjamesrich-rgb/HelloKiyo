@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>HelloKiyo Demo - Category Hub</title>
+    <link rel="stylesheet" href="/static/site.css" />
+  </head>
+  <body>
+    <header class="top">
+      <div class="brand">Hello <span>Kiyo</span></div>
+      <div class="tag">Investor demo: backend + scraped catalog</div>
+    </header>
+
+    <main class="wrap">
+      <section class="hero">
+        <div>
+          <p class="eyebrow">LOCAL DEMO READY</p>
+          <h1>Japan-inspired shopping experience with hidden COGS on backend.</h1>
+          <p>
+            This category hub is powered by a local FastAPI backend and scraped product data. Each category page loads at least 20 products with image, description, and source links.
+          </p>
+        </div>
+      </section>
+
+      <section>
+        <h2>Browse categories</h2>
+        <div class="grid">
+          {% for c in categories %}
+          <a class="cat" href="/category/{{ c.slug }}">
+            <div class="catTop">
+              <h3>{{ c.name }}</h3>
+              <span>{{ c.product_count }} products</span>
+            </div>
+            <p>{{ c.subtitle }}</p>
+            <strong>Open category</strong>
+          </a>
+          {% endfor %}
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
+

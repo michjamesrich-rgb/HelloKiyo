@@ -1,0 +1,469 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Hello Kiyo — Kawaii Japan-inspired spree</title>
+    <meta
+      name="description"
+      content="Hello Kiyo: a Japan-inspired kawaii shopping spree. Build a cute box of candy, beauty, and kawaii picks."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hachi+Maru+Pop&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Zen+Maru+Gothic:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="skyBg" aria-hidden="true">
+      <span class="cloud cloud1 vA"></span>
+      <span class="cloud cloud2 vB"></span>
+      <span class="cloud cloud3 vC"></span>
+      <span class="cloud cloud4 vA"></span>
+      <span class="cloud cloud5 vB"></span>
+    </div>
+    <div class="sakuraField" aria-hidden="true">
+      <span class="sakura s1"></span>
+      <span class="sakura s2"></span>
+      <span class="sakura s3"></span>
+      <span class="sakura s4"></span>
+      <span class="sakura s5"></span>
+      <span class="sakura s6"></span>
+      <span class="sakura s7"></span>
+      <span class="sakura s8"></span>
+      <span class="sakura s9"></span>
+      <span class="sakura s10"></span>
+      <span class="sakura s11"></span>
+      <span class="sakura s12"></span>
+      <span class="sakura s13"></span>
+      <span class="sakura s14"></span>
+      <span class="sakura s15"></span>
+    </div>
+
+    <header class="topbar">
+      <div class="brand">
+        <div class="brandMark" aria-hidden="true">
+          <svg viewBox="0 0 80 80" width="44" height="44" class="brandMarkSvg">
+            <defs>
+              <linearGradient id="brandMarkGrad" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0" stop-color="#ff4fa3" />
+                <stop offset="0.55" stop-color="#ff8bb9" />
+                <stop offset="1" stop-color="#ffd1e3" />
+              </linearGradient>
+            </defs>
+            <circle cx="40" cy="42" r="30" fill="url(#brandMarkGrad)" />
+            <ellipse cx="28" cy="24" rx="10" ry="8" fill="url(#brandMarkGrad)" transform="rotate(-25 28 24)" />
+            <ellipse cx="52" cy="24" rx="10" ry="8" fill="url(#brandMarkGrad)" transform="rotate(25 52 24)" />
+            <circle cx="30" cy="42" r="3" fill="#0f172a" />
+            <circle cx="50" cy="42" r="3" fill="#0f172a" />
+            <path d="M35 52 Q40 57 45 52" stroke="#0f172a" stroke-width="2.2" fill="none" stroke-linecap="round" />
+            <circle cx="28" cy="48" r="3" fill="#ffdde9" opacity="0.85" />
+            <circle cx="52" cy="48" r="3" fill="#ffdde9" opacity="0.85" />
+          </svg>
+        </div>
+        <div class="wordmark">
+          <div class="wordmarkRow">
+            <span class="wordmarkHello">Hello</span>
+            <span class="wordmarkKiyo">Kiyo</span>
+          </div>
+          <div class="brandJa">ハロー・キヨ ✦ Kawaii Spree</div>
+        </div>
+      </div>
+      <nav class="topNav">
+        <a href="#shop" class="topNavLink">Shop</a>
+        <a href="#missions" class="topNavLink">Missions</a>
+        <a href="#box" class="topNavLink">My Box</a>
+        <div class="socialGroup" aria-label="Follow Kiyo on social media">
+          <span class="socialLabel" aria-hidden="true">Follow Kiyo</span>
+          <a
+            href="#"
+            class="socialBtn socialBtn--instagram"
+            aria-label="Follow Kiyo on Instagram"
+            title="Follow on Instagram"
+            data-platform="instagram"
+          >
+            <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" focusable="false">
+              <rect x="3" y="3" width="18" height="18" rx="5" ry="5" fill="none" stroke="currentColor" stroke-width="1.8"/>
+              <circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="1.8"/>
+              <circle cx="17.3" cy="6.7" r="1.1" fill="currentColor"/>
+            </svg>
+            <span class="socialName">Instagram</span>
+          </a>
+          <a
+            href="#"
+            class="socialBtn socialBtn--facebook"
+            aria-label="Follow Kiyo on Facebook"
+            title="Follow on Facebook"
+            data-platform="facebook"
+          >
+            <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" focusable="false">
+              <path
+                d="M13.5 21v-7.3h2.4l.4-2.9h-2.8V9c0-.8.3-1.4 1.5-1.4h1.4V5a21 21 0 0 0-2.2-.1c-2.2 0-3.6 1.3-3.6 3.7v2.2H8v2.9h2.6V21h2.9z"
+                fill="currentColor"
+              />
+            </svg>
+            <span class="socialName">Facebook</span>
+          </a>
+          <a
+            href="#"
+            class="socialBtn socialBtn--youtube"
+            aria-label="Follow Kiyo on YouTube"
+            title="Follow on YouTube"
+            data-platform="youtube"
+          >
+            <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" focusable="false">
+              <path
+                d="M22 8.3a2.7 2.7 0 0 0-1.9-1.9C18.4 6 12 6 12 6s-6.4 0-8.1.4A2.7 2.7 0 0 0 2 8.3 28.3 28.3 0 0 0 1.6 12 28.3 28.3 0 0 0 2 15.7a2.7 2.7 0 0 0 1.9 1.9c1.7.4 8.1.4 8.1.4s6.4 0 8.1-.4a2.7 2.7 0 0 0 1.9-1.9c.3-1.2.4-2.4.4-3.7s-.1-2.5-.4-3.7z"
+                fill="currentColor"
+              />
+              <path d="M10 15V9l5 3-5 3z" fill="#ffffff"/>
+            </svg>
+            <span class="socialName">YouTube</span>
+          </a>
+          <a
+            href="#"
+            class="socialBtn socialBtn--amazon"
+            aria-label="Shop Kiyo's Amazon store"
+            title="Shop on Amazon"
+            data-platform="amazon"
+          >
+            <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" focusable="false">
+              <path
+                d="M17.3 16.5c-2.1 1.6-5.1 2.4-7.7 2.4-3.7 0-7-1.4-9.5-3.6-.2-.2 0-.5.2-.3 2.7 1.6 6 2.5 9.4 2.5 2.3 0 4.9-.5 7.3-1.5.3-.2.6.2.3.5z"
+                fill="#ff9900"
+              />
+              <path
+                d="M18.2 15.3c-.3-.3-1.7-.2-2.4-.1-.2 0-.2-.1 0-.3.7-.2 1.7-.4 2.5-.1.5.1.5.5.3.8-.1.1-.4.3-.4.1 0 0 .1-.3 0-.4z"
+                fill="#ff9900"
+              />
+              <path
+                d="M9.8 8.5V7.6c0-.1.1-.2.2-.2h4c.1 0 .2.1.2.2v.8c0 .1-.1.3-.3.5l-2 3c.8 0 1.6.1 2.3.5.1.1.2.2.2.3v.9c0 .2-.2.3-.3.2-1.2-.6-2.8-.7-4.1 0-.2.1-.3-.1-.3-.2v-.9c0-.2 0-.4.2-.6l2.3-3.4h-2c-.2 0-.3-.1-.3-.2zM5.9 14.3h-1.2c-.1 0-.2-.1-.2-.2V7.6c0-.1.1-.2.2-.2h1.1c.1 0 .2.1.2.2v.9c.3-.8 1-1.2 1.8-1.2.9 0 1.4.4 1.8 1.2.3-.8 1.1-1.2 1.9-1.2.6 0 1.2.2 1.6.8.4.6.3 1.5.3 2.3v4.6c0 .1-.1.2-.2.2h-1.2c-.1 0-.2-.1-.2-.3V10c0-.3 0-1-.1-1.3-.1-.4-.4-.6-.8-.6-.3 0-.7.2-.8.6-.2.4-.2.9-.2 1.3v4.1c0 .1-.1.2-.2.2h-1.2c-.1 0-.2-.1-.2-.3V10c0-.9.1-2.1-1-2.1-1 0-1 1.2-1 2.1v4.1c0 .1-.1.2-.2.2z"
+                fill="#ffffff"
+              />
+            </svg>
+            <span class="socialName">Amazon</span>
+          </a>
+        </div>
+        <button class="ghost soundToggle" id="soundToggle" type="button" aria-pressed="true">Sound On</button>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <div class="heroCard">
+        <div class="heroMain">
+          <div class="heroCopy">
+            <div class="heroEyebrow">✿ ようこそ • Welcome</div>
+            <h1 class="heroTitle">
+              Build a <span class="titleAccent">kawaii</span> box of
+              <span class="titleAccent pink">fun</span> Japanese finds.
+            </h1>
+            <p class="heroText">
+              Hand-picked candy, beauty, stationery, and character goods straight from Japan —
+              tucked into one adorable box, just for you.
+            </p>
+            <div class="heroActions">
+              <div class="heroBoxLabel">Pick your spree size</div>
+              <div class="boxPicker" id="boxPicker" aria-label="Choose your box size"></div>
+            </div>
+          </div>
+          <div class="heroKiyo" aria-hidden="true">
+            <div class="heroKiyoBubble">
+              <span class="heroKiyoBubbleKanji">こんにちは！</span>
+              <strong>Hi, I'm Kiyo!</strong>
+              <span class="heroKiyoBubbleSub">Let's fill your box with cute stuff ✿</span>
+            </div>
+            <div class="heroKiyoFrame">
+              <img src="assets/brand/kiyo-mascot-v4.png" alt="Kiyo — your kawaii shopping guide" class="heroKiyoImg" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <section class="discover heroDiscover" id="discover" aria-label="Collections">
+        <div class="sectionHeader">
+          <div class="sectionEyebrow">コレクション ✦ Collections</div>
+          <h2>Explore cute collections</h2>
+          <p>Tap a collection to drill into its subcategories and pick your favorites.</p>
+        </div>
+        <div class="showcaseCarousel" id="showcaseCarousel">
+          <button
+            type="button"
+            class="carouselBtn prev"
+            id="showcasePrev"
+            aria-label="Previous collection"
+          >‹</button>
+          <div class="showcaseViewport" id="showcaseViewport">
+            <div class="showcaseGrid" id="showcaseGrid" aria-live="polite"></div>
+          </div>
+          <button
+            type="button"
+            class="carouselBtn next"
+            id="showcaseNext"
+            aria-label="Next collection"
+          >›</button>
+          <div class="carouselDots" id="showcaseDots" aria-hidden="true"></div>
+        </div>
+      </section>
+    </section>
+
+    <main class="shopLayout">
+      <section class="shopMain" id="shop" aria-label="Shop">
+        <section class="catalog" id="catalog" aria-label="Catalog">
+          <div class="shopTopBar">
+            <div class="catalogTitleGroup">
+              <button class="ghost backBtn" id="backToCollectionsBtn" type="button" hidden>
+                ← All collections
+              </button>
+              <div>
+                <div class="shopEyebrow" id="catalogEyebrow">お買い物 ✦ Shop the drop</div>
+                <h2 class="shopTitle" id="catalogTitle">Featured picks</h2>
+                <p class="shopSub" id="catalogMeta">Loading curated catalog…</p>
+              </div>
+            </div>
+            <div class="shopTools">
+              <div class="searchWrap">
+                <input
+                  id="searchInput"
+                  type="search"
+                  placeholder="Search cute picks…"
+                  aria-label="Search products"
+                />
+              </div>
+              <button class="ghost" id="aiPickBtn" type="button">✨ AI Pick</button>
+              <button class="ghost" id="vibeBtn" type="button">🎨 Vibe</button>
+            </div>
+          </div>
+
+          <div class="filterStack">
+            <div class="filters mainFilters" id="filters" aria-label="Main categories"></div>
+            <div class="filters subFilters" id="subFilters" aria-label="Subcategories" hidden></div>
+          </div>
+
+          <div class="grid" id="productGrid" aria-label="Product catalog"></div>
+
+          <div class="catalogPager">
+            <button class="ghost" id="catalogPrevBtn" type="button">← Prev</button>
+            <span id="catalogPageText">Page 1</span>
+            <button class="ghost" id="catalogNextBtn" type="button">Next →</button>
+          </div>
+        </section>
+      </section>
+
+      <aside class="cartSidebar" id="box" aria-label="Your box">
+        <div class="cartCard">
+          <div class="cartHeader">
+            <div>
+              <div class="cartTitleLabel">私のボックス</div>
+              <div class="cartTitle">Your Box</div>
+            </div>
+            <div class="cartHeaderActions">
+              <button class="ghost expandBoxBtn" id="expandBoxBtn" type="button" aria-label="Expand your box">
+                ⤢ Expand
+              </button>
+              <button class="ghost resetBtn" id="resetBtn" type="button">Reset</button>
+            </div>
+          </div>
+
+          <div class="boxStage">
+            <div class="boxGlass" aria-hidden="true">
+              <div class="boxFill" id="boxFill"></div>
+              <div class="boxMiniStrip" id="boxMiniStrip"></div>
+            </div>
+            <div class="boxStats">
+              <div class="stat">
+                <div class="statLabel">Items</div>
+                <div class="statValue" id="itemCount">0</div>
+              </div>
+              <div class="stat">
+                <div class="statLabel">Full</div>
+                <div class="statValue" id="gaugePct">0%</div>
+              </div>
+              <div class="stat">
+                <div class="statLabel">Status</div>
+                <div class="statValue small" id="itemRemaining">Ready</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="cart" id="cart"></div>
+
+          <details class="cartExtras" open>
+            <summary>Gift wrap & shipping</summary>
+            <div class="giftWrapPicker">
+              <div class="shipTitle">🎀 Japanese gift wrap</div>
+              <div class="giftWrapOptions" id="giftWrapOptions"></div>
+              <div class="giftPreview" id="giftPreview" aria-hidden="true">
+                <div class="giftPreviewCloth"></div>
+                <div class="giftPreviewRibbon"></div>
+                <div class="giftPreviewBow"></div>
+              </div>
+              <div class="giftWrapMeta" id="giftWrapMeta">No wrap selected</div>
+            </div>
+            <div class="shipPicker">
+              <div class="shipTitle">✈️ Shipping</div>
+              <div class="shipDestinationRow">
+                <label class="shipDestinationLabel" for="shipDestination">Deliver to</label>
+                <select id="shipDestination" class="shipDestinationSelect" aria-label="Shipping destination">
+                  <option value="us">United States</option>
+                  <option value="canada">Canada</option>
+                  <option value="uk_eu">UK / EU</option>
+                  <option value="au_nz">Australia / NZ</option>
+                  <option value="asia">Asia</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+              <div class="shipOptions" id="shipOptions"></div>
+              <div class="smallPrint">Shipping is calculated separately at checkout.</div>
+            </div>
+            <div class="checkoutDisclosure" id="checkoutDisclosure" aria-label="Checkout disclosure">
+              <div class="checkoutDisclosureTitle">Before you checkout</div>
+              <ul class="checkoutDisclosureList">
+                <li>
+                  <strong>Box-only pricing:</strong> Item prices are hidden — you’re buying the vibe + the curated assortment, not individual items.
+                </li>
+                <li>
+                  <strong>Variety:</strong> Picks may vary by availability. We’ll swap with something equally cute when needed.
+                </li>
+                <li>
+                  <strong>Shipping:</strong> Added at checkout based on destination + box size (Standard or Expedited).
+                </li>
+                <li>
+                  <strong>$50 Kiyo’s Mini:</strong> Curated lineup with no custom swaps. Bigger boxes are customizable.
+                </li>
+              </ul>
+              <div class="checkoutDisclosureFine">
+                This is an investor demo. Final policies and carrier rates will be confirmed pre-launch.
+              </div>
+            </div>
+          </details>
+
+          <button class="primary checkoutBtn" id="checkoutBtn" type="button" disabled>
+            Checkout (demo)
+          </button>
+        </div>
+      </aside>
+    </main>
+
+    <section class="missionsSection" id="missions" aria-label="Missions and bonuses">
+      <div class="sectionHeader">
+        <div class="sectionEyebrow">🎮 ミッション • Missions</div>
+        <h2>Unlock bonuses</h2>
+        <p>Combine categories to unlock free bonus items that don't consume your box capacity.</p>
+      </div>
+      <div class="missionsGrid" id="missionsGrid"></div>
+    </section>
+
+    <footer class="siteFooter">
+      <div class="footerBrand">
+        <span class="footerMark">🌸</span>
+        <span>Hello Kiyo</span>
+      </div>
+      <div class="footerNote">
+        Investor demo • Scraped catalog • Japan-inspired picks curated for kawaii shoppers.
+      </div>
+    </footer>
+
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+    <dialog class="dialog" id="vibeDialog" aria-label="Pick your vibe">
+      <form method="dialog" class="dialogBody">
+        <div class="dialogHeader">
+          <div>
+            <div class="dialogTitle">Pick your vibe ✨</div>
+            <div class="dialogSub">Choose what you're into. We'll tailor the spree.</div>
+          </div>
+          <button class="ghost" value="cancel">Close</button>
+        </div>
+        <div class="dialogSection">
+          <div class="dialogLabel">Categories</div>
+          <div class="dialogChips" id="vibeCategories"></div>
+        </div>
+        <div class="dialogSection">
+          <div class="dialogLabel">Aesthetic</div>
+          <div class="dialogChips" id="vibeAesthetic"></div>
+        </div>
+        <div class="dialogFooter">
+          <button class="primary" id="saveVibeBtn" value="default">Save</button>
+        </div>
+      </form>
+    </dialog>
+
+    <dialog class="dialog mysteryDialog" id="mysteryDialog" aria-label="Mystery welcome game">
+      <form method="dialog" class="dialogBody">
+        <div class="dialogHeader">
+          <div>
+            <div class="dialogTitle">🎁 Welcome Mystery</div>
+            <div class="dialogSub">Pick a capsule to unlock a free bonus before you start.</div>
+          </div>
+        </div>
+        <div class="mysteryCapsules" id="mysteryCapsules"></div>
+        <div class="mysteryResult" id="mysteryResult">Pick one capsule to reveal your reward.</div>
+        <div class="mysteryChoices" id="mysteryChoices"></div>
+        <div class="dialogFooter">
+          <button class="primary" id="claimMysteryBtn" value="default" disabled>Claim reward</button>
+        </div>
+      </form>
+    </dialog>
+
+    <dialog class="dialog boxDialog" id="boxDialog" aria-label="Your box (expanded view)">
+      <form method="dialog" class="boxDialogBody">
+        <div class="boxDialogHeader">
+          <div>
+            <div class="boxDialogKanji">私のボックス ✦ Your Box</div>
+            <div class="boxDialogTitle" id="boxDialogTitle">Your Spree</div>
+            <div class="boxDialogSub" id="boxDialogSub">Review your picks, adjust quantities, or remove anything.</div>
+          </div>
+          <button class="ghost boxDialogClose" value="cancel" aria-label="Close">✕</button>
+        </div>
+
+        <div class="boxDialogStats">
+          <div class="boxDialogGaugeWrap">
+            <div class="boxDialogGauge">
+              <div class="boxDialogGaugeFill" id="boxDialogGaugeFill"></div>
+            </div>
+            <div class="boxDialogGaugeMeta">
+              <span id="boxDialogGaugePct">0%</span>
+              <span>·</span>
+              <span id="boxDialogGaugeItems">0 items</span>
+              <span>·</span>
+              <span id="boxDialogGaugeTier">Box</span>
+            </div>
+          </div>
+          <div class="boxDialogStatus" id="boxDialogStatus">Ready</div>
+        </div>
+
+        <div class="boxDialogList" id="boxDialogList" role="list">
+          <div class="boxDialogEmpty">Your box is empty. Add cute picks from Collections!</div>
+        </div>
+
+        <div class="boxDialogFooter">
+          <button type="button" class="ghost" id="boxDialogContinueBtn" value="cancel">← Keep shopping</button>
+          <button type="button" class="primary" id="boxDialogCheckoutBtn">Checkout (demo)</button>
+        </div>
+      </form>
+    </dialog>
+
+    <dialog class="dialog" id="productDialog" aria-label="Product details">
+      <form method="dialog" class="dialogBody">
+        <div class="dialogHeader">
+          <div>
+            <div class="dialogTitle" id="productDialogTitle">Item</div>
+            <div class="dialogSub" id="productDialogCategory">Category</div>
+          </div>
+          <button class="ghost" value="cancel">Close</button>
+        </div>
+        <div class="dialogSection">
+          <img id="productDialogImage" alt="" class="productDialogImage" />
+          <p id="productDialogDesc"></p>
+        </div>
+        <div class="dialogFooter">
+          <button class="primary" id="productDialogAddBtn" type="button">Add to box</button>
+        </div>
+      </form>
+    </dialog>
+
+    <script type="module" src="./src/app.js?v=ship-20260425"></script>
+  </body>
+</html>

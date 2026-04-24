@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{{ category.name }} - HelloKiyo</title>
+    <link rel="stylesheet" href="/static/site.css" />
+  </head>
+  <body>
+    <header class="top">
+      <a class="back" href="/">← Categories</a>
+      <div class="brand">Hello <span>Kiyo</span></div>
+    </header>
+
+    <main class="wrap">
+      <section class="catHero">
+        <p class="eyebrow">CATEGORY</p>
+        <h1>{{ category.name }}</h1>
+        <p>{{ category.subtitle }}</p>
+      </section>
+
+      <section>
+        <div class="metaBar">
+          <div id="metaText">Loading products...</div>
+          <div class="pager">
+            <button id="prevBtn" type="button">Prev</button>
+            <span id="pageText"></span>
+            <button id="nextBtn" type="button">Next</button>
+          </div>
+        </div>
+        <div id="productGrid" class="products"></div>
+      </section>
+    </main>
+
+    <dialog id="productDialog" class="productDialog">
+      <form method="dialog" class="productDialogBody">
+        <div class="productDialogHead">
+          <h3 id="dialogTitle">Product details</h3>
+          <button type="submit" class="closeBtn">Close</button>
+        </div>
+        <img id="dialogImage" class="dialogImage" alt="" />
+        <p id="dialogDesc"></p>
+        <a id="dialogSource" target="_blank" rel="noopener noreferrer">Open source page</a>
+      </form>
+    </dialog>
+
+    <script>
+      window.__CATEGORY_SLUG__ = "{{ category.slug }}";
+      window.__INITIAL_PAGE__ = {{ initial_page }};
+    </script>
+    <script src="/static/category.js"></script>
+  </body>
+</html>
+

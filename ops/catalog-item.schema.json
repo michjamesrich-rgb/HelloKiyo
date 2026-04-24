@@ -1,0 +1,59 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "HelloKiyoCatalogItem",
+  "type": "object",
+  "required": ["id", "title", "category", "source"],
+  "properties": {
+    "id": { "type": "string" },
+    "title": { "type": "string" },
+    "category": { "type": "string" },
+    "vibe": { "type": "array", "items": { "type": "string" } },
+    "images": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Normalized image URLs (preferably your own cached copies later)."
+    },
+    "source": {
+      "type": "object",
+      "required": ["domain", "productUrl", "capturedAt"],
+      "properties": {
+        "domain": { "type": "string" },
+        "productUrl": { "type": "string" },
+        "capturedAt": { "type": "string" },
+        "rawTitle": { "type": "string" },
+        "rawPrice": { "type": "string" }
+      },
+      "additionalProperties": true
+    },
+    "compliance": {
+      "type": "object",
+      "properties": {
+        "robotsAllowed": { "type": "boolean" },
+        "tosUrl": { "type": "string" },
+        "tosRisk": { "type": "string", "enum": ["unknown", "low", "medium", "high"] }
+      },
+      "additionalProperties": true
+    },
+    "costBasis": {
+      "type": "object",
+      "properties": {
+        "supplierUnitCostUsd": { "type": "number", "minimum": 0 },
+        "expectedJapanToUSShippingAllocationUsd": { "type": "number", "minimum": 0 },
+        "handlingAllowanceUsd": { "type": "number", "minimum": 0 }
+      },
+      "additionalProperties": true
+    },
+    "status": {
+      "type": "object",
+      "properties": {
+        "isActive": { "type": "boolean" },
+        "needsReview": { "type": "boolean" },
+        "doNotRecommend": { "type": "boolean" },
+        "outOfStock": { "type": "boolean" }
+      },
+      "additionalProperties": true
+    }
+  },
+  "additionalProperties": true
+}
+
